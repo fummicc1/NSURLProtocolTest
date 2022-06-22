@@ -1,0 +1,286 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "abseil",
+        "repositoryURL": "https://github.com/firebase/abseil-cpp-SwiftPM.git",
+        "state": {
+          "branch": null,
+          "revision": "fffc3c2729be5747390ad02d5100291a0d9ad26a",
+          "version": "0.20200225.4"
+        }
+      },
+      {
+        "package": "Aiolos",
+        "repositoryURL": "https://github.com/IdeasOnCanvas/Aiolos",
+        "state": {
+          "branch": "main",
+          "revision": "12aee6065058aa7abe4f57ca93d5e4682c79bb6b",
+          "version": null
+        }
+      },
+      {
+        "package": "AlgoliaSearchClient",
+        "repositoryURL": "https://github.com/algolia/algoliasearch-client-swift",
+        "state": {
+          "branch": null,
+          "revision": "b0082c5afc902e32157726e4926b063eb4052e6c",
+          "version": "8.14.0"
+        }
+      },
+      {
+        "package": "BoringSSL-GRPC",
+        "repositoryURL": "https://github.com/firebase/boringssl-SwiftPM.git",
+        "state": {
+          "branch": null,
+          "revision": "734a8247442fde37df4364c21f6a0085b6a36728",
+          "version": "0.7.2"
+        }
+      },
+      {
+        "package": "EasyFirebaseSwift",
+        "repositoryURL": "https://github.com/fummicc1/EasyFirebaseSwift",
+        "state": {
+          "branch": "develop",
+          "revision": "3fbb7f356ee76639220912e2e80c4fdc6fcb1051",
+          "version": null
+        }
+      },
+      {
+        "package": "Firebase",
+        "repositoryURL": "https://github.com/firebase/firebase-ios-sdk",
+        "state": {
+          "branch": "master",
+          "revision": "78cc446bb68d34b7b54b1b8f6a62f37ad540fe83",
+          "version": null
+        }
+      },
+      {
+        "package": "Floaty",
+        "repositoryURL": "https://github.com/kciter/Floaty.git",
+        "state": {
+          "branch": "master",
+          "revision": "f8f6cf9970a3d92e98fcc2cf123b1bdef15e8778",
+          "version": null
+        }
+      },
+      {
+        "package": "FSCalendar",
+        "repositoryURL": "https://github.com/WenchaoD/FSCalendar",
+        "state": {
+          "branch": null,
+          "revision": "afaf247581eb1f8aea847f2e6c99c665ae900494",
+          "version": "2.8.3"
+        }
+      },
+      {
+        "package": "GoogleAppMeasurement",
+        "repositoryURL": "https://github.com/google/GoogleAppMeasurement.git",
+        "state": {
+          "branch": null,
+          "revision": "9b74e6a3f875208c04c22b39b580a21d4de0f4f9",
+          "version": "8.14.0"
+        }
+      },
+      {
+        "package": "GoogleDataTransport",
+        "repositoryURL": "https://github.com/google/GoogleDataTransport.git",
+        "state": {
+          "branch": null,
+          "revision": "15ccdfd25ac55b9239b82809531ff26605e7556e",
+          "version": "9.1.2"
+        }
+      },
+      {
+        "package": "GoogleUtilities",
+        "repositoryURL": "https://github.com/google/GoogleUtilities.git",
+        "state": {
+          "branch": null,
+          "revision": "b3bb0c5551fb3f80ca939829639ab5b093edd14f",
+          "version": "7.7.0"
+        }
+      },
+      {
+        "package": "gRPC",
+        "repositoryURL": "https://github.com/firebase/grpc-SwiftPM.git",
+        "state": {
+          "branch": null,
+          "revision": "fb405dd2c7901485f7e158b24e3a0a47e4efd8b5",
+          "version": "1.28.4"
+        }
+      },
+      {
+        "package": "GTMSessionFetcher",
+        "repositoryURL": "https://github.com/google/gtm-session-fetcher.git",
+        "state": {
+          "branch": null,
+          "revision": "eca9404a18f53727e4698211aaf2615eb93b962a",
+          "version": "1.7.1"
+        }
+      },
+      {
+        "package": "leveldb",
+        "repositoryURL": "https://github.com/firebase/leveldb.git",
+        "state": {
+          "branch": null,
+          "revision": "0706abcc6b0bd9cedfbb015ba840e4a780b5159b",
+          "version": "1.22.2"
+        }
+      },
+      {
+        "package": "nanopb",
+        "repositoryURL": "https://github.com/firebase/nanopb.git",
+        "state": {
+          "branch": null,
+          "revision": "7ee9ef9f627d85cbe1b8c4f49a3ed26eed216c77",
+          "version": "2.30908.0"
+        }
+      },
+      {
+        "package": "NVActivityIndicatorView",
+        "repositoryURL": "https://github.com/ninjaprox/NVActivityIndicatorView",
+        "state": {
+          "branch": null,
+          "revision": "bcb52371f2259254bac6690f92bb474a61768c47",
+          "version": "5.1.1"
+        }
+      },
+      {
+        "package": "Promises",
+        "repositoryURL": "https://github.com/google/promises.git",
+        "state": {
+          "branch": null,
+          "revision": "611337c330350c9c1823ad6d671e7f936af5ee13",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "RealmDatabase",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "3c78cccdc0d9f967c5c15b7f3ea081814e2b3ef2",
+          "version": "11.13.0"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-swift",
+        "state": {
+          "branch": "master",
+          "revision": "8c1cbf124c5025da9220595e7764059963065891",
+          "version": null
+        }
+      },
+      {
+        "package": "RxCombine",
+        "repositoryURL": "https://github.com/CombineCommunity/RxCombine",
+        "state": {
+          "branch": null,
+          "revision": "19474c2ac9fde613bba8513bf98990e1aa9831cd",
+          "version": "2.0.1"
+        }
+      },
+      {
+        "package": "RxMKMapView",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxMKMapView",
+        "state": {
+          "branch": null,
+          "revision": "b5360def2932139725990eddfc870577844124b4",
+          "version": "6.0.0"
+        }
+      },
+      {
+        "package": "RxRealm",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxRealm",
+        "state": {
+          "branch": null,
+          "revision": "a7de576348d48286d8b100a501f757a1c531f1dd",
+          "version": "5.0.5"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "b4307ba0b6425c0ba4178e138799946c3da594f8",
+          "version": "6.5.0"
+        }
+      },
+      {
+        "package": "SFSafeSymbols",
+        "repositoryURL": "https://github.com/piknotech/SFSafeSymbols",
+        "state": {
+          "branch": null,
+          "revision": "c61de7a6e9eb1520d32316b06d5932accd974e70",
+          "version": "2.1.3"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "StubKit",
+        "repositoryURL": "https://github.com/kateinoigakukun/StubKit",
+        "state": {
+          "branch": null,
+          "revision": "6d3c5d8dec873b8b0c4e4ae5832cb91218b8f858",
+          "version": "0.1.7"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "5d66f7ba25daf4f94100e7022febf3c75e37a6c7",
+          "version": "1.4.2"
+        }
+      },
+      {
+        "package": "SwiftProtobuf",
+        "repositoryURL": "https://github.com/apple/swift-protobuf.git",
+        "state": {
+          "branch": null,
+          "revision": "e1499bc69b9040b29184f7f2996f7bab467c1639",
+          "version": "1.19.0"
+        }
+      },
+      {
+        "package": "SwiftUICharts",
+        "repositoryURL": "https://github.com/mecid/SwiftUICharts.git",
+        "state": {
+          "branch": null,
+          "revision": "15ec6551761e6a444e9439073e1f557c1c9700c6",
+          "version": "0.6.8"
+        }
+      },
+      {
+        "package": "SwiftyUserDefaults",
+        "repositoryURL": "https://github.com/sunshinejr/SwiftyUserDefaults",
+        "state": {
+          "branch": null,
+          "revision": "f66bcd04088582c8fbb5cb8554d577e303bae396",
+          "version": "5.3.0"
+        }
+      },
+      {
+        "package": "Swinject",
+        "repositoryURL": "https://github.com/Swinject/Swinject",
+        "state": {
+          "branch": null,
+          "revision": "f10b6e9ebff440f985c43008f7c2d097639fcb81",
+          "version": "2.8.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

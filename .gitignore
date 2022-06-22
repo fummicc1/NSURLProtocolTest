@@ -1,0 +1,7 @@
+build/
+Pods/
+Carthage/
+.DS_Store
+DerivedData/
+ToiletMap.xcworkspace/xcuserdata/
+

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateToiletViewController" customModule="ToiletMap" customModuleProvider="target">
+            <connections>
+                <outlet property="borderView" destination="NHJ-te-8wd" id="TJC-6z-Zls"/>
+                <outlet property="detailTextView" destination="kDR-T3-880" id="Bym-X0-Lnl"/>
+                <outlet property="detailTextViewBottomSeparator" destination="k7G-5r-0h6" id="IhJ-4x-x63"/>
+                <outlet property="locationSwitch" destination="uUQ-5W-fsl" id="9Wo-ut-XuC"/>
+                <outlet property="mapView" destination="zdH-Rh-vh4" id="u8c-of-q1P"/>
+                <outlet property="nameTextField" destination="Pzn-Vi-jIj" id="4M2-bc-8kX"/>
+                <outlet property="view" destination="bCt-LW-DSB" id="bPD-8a-gCz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bCt-LW-DSB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMl-7N-8Vf">
+                    <rect key="frame" x="0.0" y="68" width="414" height="794"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mw5-vG-Wku">
+                            <rect key="frame" x="16" y="16" width="382" height="24"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="概要" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pzn-Vi-jIj">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="22"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHJ-te-8wd" customClass="BorderView" customModule="ToiletMap" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="22" width="382" height="2"/>
+                                    <color key="backgroundColor" name="MainColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="d7Z-Yb-GrE"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kDR-T3-880" customClass="PlaceholderTextView" customModule="ToiletMap" customModuleProvider="target">
+                            <rect key="frame" x="16" y="64" width="382" height="38"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="fCI-fv-e0O">
+                            <rect key="frame" x="202.5" y="126" width="179.5" height="31"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RxK-Sk-P2B">
+                                    <rect key="frame" x="0.0" y="0.0" width="179.5" height="31"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在地に作成" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3l5-af-9De">
+                                            <rect key="frame" x="0.0" y="0.0" width="122.5" height="31"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Pd-Ef-3K0">
+                                            <rect key="frame" x="130.5" y="0.0" width="49" height="31"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uUQ-5W-fsl" customClass="ColoredSwitch" customModule="ToiletMap" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zdH-Rh-vh4">
+                            <rect key="frame" x="0.0" y="181" width="414" height="300"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="ajD-Au-kPE"/>
+                            </constraints>
+                        </mapView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7G-5r-0h6">
+                            <rect key="frame" x="16" y="100" width="382" height="2"/>
+                            <color key="backgroundColor" name="MainColor"/>
+                            <color key="tintColor" name="MainColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="bFV-pS-b41"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="zdH-Rh-vh4" firstAttribute="top" secondItem="fCI-fv-e0O" secondAttribute="bottom" constant="24" id="2IM-iA-vvD"/>
+                        <constraint firstItem="sLn-ad-T7y" firstAttribute="trailing" secondItem="kDR-T3-880" secondAttribute="trailing" constant="16" id="3vg-Hw-0kW"/>
+                        <constraint firstItem="sLn-ad-T7y" firstAttribute="trailing" secondItem="mw5-vG-Wku" secondAttribute="trailing" constant="16" id="ERK-MI-Vrm"/>
+                        <constraint firstItem="k7G-5r-0h6" firstAttribute="leading" secondItem="kDR-T3-880" secondAttribute="leading" id="H1h-25-9zL"/>
+                        <constraint firstItem="zdH-Rh-vh4" firstAttribute="width" secondItem="knt-UD-09t" secondAttribute="width" id="HIz-fd-f47"/>
+                        <constraint firstItem="zdH-Rh-vh4" firstAttribute="leading" secondItem="sLn-ad-T7y" secondAttribute="leading" id="SHw-wI-d1w"/>
+                        <constraint firstItem="k7G-5r-0h6" firstAttribute="trailing" secondItem="kDR-T3-880" secondAttribute="trailing" id="Ump-ds-B8s"/>
+                        <constraint firstItem="kDR-T3-880" firstAttribute="leading" secondItem="sLn-ad-T7y" secondAttribute="leading" constant="16" id="XBd-qg-Vbj"/>
+                        <constraint firstItem="fCI-fv-e0O" firstAttribute="top" secondItem="kDR-T3-880" secondAttribute="bottom" constant="24" id="fZY-aR-Smd"/>
+                        <constraint firstItem="mw5-vG-Wku" firstAttribute="top" secondItem="knt-UD-09t" secondAttribute="top" constant="16" id="hKG-nc-ulu"/>
+                        <constraint firstItem="sLn-ad-T7y" firstAttribute="trailing" secondItem="zdH-Rh-vh4" secondAttribute="trailing" id="hvj-Ds-ReV"/>
+                        <constraint firstItem="zdH-Rh-vh4" firstAttribute="bottom" secondItem="knt-UD-09t" secondAttribute="bottom" id="n3L-NU-lLE"/>
+                        <constraint firstItem="mw5-vG-Wku" firstAttribute="leading" secondItem="sLn-ad-T7y" secondAttribute="leading" constant="16" id="pYB-Hz-Vr8"/>
+                        <constraint firstItem="kDR-T3-880" firstAttribute="top" secondItem="mw5-vG-Wku" secondAttribute="bottom" constant="24" id="vdx-By-TIx"/>
+                        <constraint firstItem="k7G-5r-0h6" firstAttribute="bottom" secondItem="kDR-T3-880" secondAttribute="bottom" id="x1I-Lq-3lL"/>
+                        <constraint firstItem="sLn-ad-T7y" firstAttribute="trailing" secondItem="fCI-fv-e0O" secondAttribute="trailing" constant="32" id="z63-gj-baa"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="knt-UD-09t"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="sLn-ad-T7y"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="agn-sJ-kBH"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dMl-7N-8Vf" firstAttribute="top" secondItem="agn-sJ-kBH" secondAttribute="top" constant="24" id="7eL-xJ-3NT"/>
+                <constraint firstItem="dMl-7N-8Vf" firstAttribute="leading" secondItem="bCt-LW-DSB" secondAttribute="leading" id="GUf-t7-0OR"/>
+                <constraint firstItem="agn-sJ-kBH" firstAttribute="bottom" secondItem="dMl-7N-8Vf" secondAttribute="bottom" id="WTq-XQ-rFP"/>
+                <constraint firstItem="agn-sJ-kBH" firstAttribute="trailing" secondItem="dMl-7N-8Vf" secondAttribute="trailing" id="hzg-e0-eqh"/>
+            </constraints>
+            <point key="canvasLocation" x="236.23188405797103" y="150.66964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

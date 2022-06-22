@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeToiletDetailViewController" customModule="ToiletMap" customModuleProvider="target">
+            <connections>
+                <outlet property="baseView" destination="bZO-To-edv" id="1Od-Yr-eUE"/>
+                <outlet property="createToiletDiaryButton" destination="jkL-1j-q2u" id="MPt-6G-pEh"/>
+                <outlet property="dismissButton" destination="gfJ-hb-Lnn" id="aYy-ou-LSi"/>
+                <outlet property="showDirectionsButton" destination="d82-mP-4db" id="Z8c-YI-M5z"/>
+                <outlet property="stackView" destination="3to-Td-i9y" id="F13-hO-soZ"/>
+                <outlet property="titleLabel" destination="ebb-I6-hna" id="XxM-zs-BZp"/>
+                <outlet property="view" destination="zQJ-bs-8Bv" id="f3q-pR-ivU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zQJ-bs-8Bv">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="222"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZO-To-edv">
+                    <rect key="frame" x="0.0" y="44" width="414" height="178"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TkQ-JD-lv5">
+                            <rect key="frame" x="16" y="16" width="382" height="31"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ySx-hj-WA3">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="31"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfJ-hb-Lnn" customClass="ShadowRadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                                            <color key="backgroundColor" name="MainColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="gfJ-hb-Lnn" secondAttribute="height" id="GqW-JI-f5G"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <color key="tintColor" name="BackgroundColor"/>
+                                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                            <state key="normal" image="xmark" catalog="system">
+                                                <color key="titleColor" name="MainColor"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="medium" weight="semibold">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                </preferredSymbolConfiguration>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3to-Td-i9y">
+                            <rect key="frame" x="16" y="63" width="382" height="91"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebb-I6-hna">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="PMJ-au-esp">
+                                    <rect key="frame" x="0.0" y="58" width="382" height="33"/>
+                                    <subviews>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkL-1j-q2u" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="239" height="33"/>
+                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="tintColor" name="MainColor"/>
+                                            <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                            <state key="normal" title="日記をつける" image="note" catalog="system">
+                                                <color key="titleColor" name="MainColor"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                </preferredSymbolConfiguration>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d82-mP-4db" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                            <rect key="frame" x="243" y="0.0" width="139" height="33"/>
+                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="tintColor" name="MainColor"/>
+                                            <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                            <state key="normal" title="経路" image="arrow.turn.up.right" catalog="system">
+                                                <color key="titleColor" name="MainColor"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                </preferredSymbolConfiguration>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="3to-Td-i9y" firstAttribute="leading" secondItem="bZO-To-edv" secondAttribute="leading" constant="16" id="15v-MX-uSl"/>
+                        <constraint firstAttribute="trailing" secondItem="TkQ-JD-lv5" secondAttribute="trailing" constant="16" id="D9O-Q1-zq2"/>
+                        <constraint firstAttribute="bottom" secondItem="3to-Td-i9y" secondAttribute="bottom" constant="24" id="Gug-5T-Aha"/>
+                        <constraint firstItem="3to-Td-i9y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TkQ-JD-lv5" secondAttribute="bottom" constant="16" id="HS1-Vr-LPR"/>
+                        <constraint firstItem="TkQ-JD-lv5" firstAttribute="leading" secondItem="bZO-To-edv" secondAttribute="leading" constant="16" id="KV5-cG-YqX"/>
+                        <constraint firstItem="TkQ-JD-lv5" firstAttribute="top" secondItem="bZO-To-edv" secondAttribute="top" constant="16" id="Q8U-2x-NiO"/>
+                        <constraint firstAttribute="trailing" secondItem="3to-Td-i9y" secondAttribute="trailing" constant="16" id="R7y-82-ooZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4ek-yy-Gek"/>
+            <constraints>
+                <constraint firstItem="bZO-To-edv" firstAttribute="trailing" secondItem="4ek-yy-Gek" secondAttribute="trailing" id="25R-8u-AuS"/>
+                <constraint firstItem="4ek-yy-Gek" firstAttribute="bottom" secondItem="bZO-To-edv" secondAttribute="bottom" id="Rcz-X7-2cG"/>
+                <constraint firstItem="bZO-To-edv" firstAttribute="top" secondItem="4ek-yy-Gek" secondAttribute="top" id="nEv-Jv-vVS"/>
+                <constraint firstItem="bZO-To-edv" firstAttribute="leading" secondItem="4ek-yy-Gek" secondAttribute="leading" id="yKI-aY-cj3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="125" y="140"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.turn.up.right" catalog="system" width="128" height="99"/>
+        <image name="note" catalog="system" width="128" height="106"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="BackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

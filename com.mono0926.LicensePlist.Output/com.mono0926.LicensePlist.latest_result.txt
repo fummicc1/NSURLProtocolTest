@@ -1,0 +1,51 @@
+name: LicensePlist, nameSpecified: , owner: mono0926, version: 
+
+name: abseil-cpp-SwiftPM, nameSpecified: abseil, owner: firebase, version: 0.20200225.4
+
+name: Aiolos, nameSpecified: Aiolos, owner: fummicc1, version: 
+
+name: boringssl-SwiftPM, nameSpecified: BoringSSL-GRPC, owner: firebase, version: 0.7.2
+
+name: EasyFirebaseSwift, nameSpecified: EasyFirebaseSwift, owner: fummicc1, version: 
+
+name: firebase-ios-sdk, nameSpecified: Firebase, owner: firebase, version: 8.3.1
+
+name: Floaty, nameSpecified: Floaty, owner: kciter, version: 
+
+name: GoogleAppMeasurement, nameSpecified: GoogleAppMeasurement, owner: google, version: 8.3.1
+
+name: GoogleDataTransport, nameSpecified: GoogleDataTransport, owner: google, version: 9.1.0
+
+name: GoogleUtilities, nameSpecified: GoogleUtilities, owner: google, version: 7.5.0
+
+name: grpc-SwiftPM, nameSpecified: gRPC, owner: firebase, version: 1.28.4
+
+name: gtm-session-fetcher, nameSpecified: GTMSessionFetcher, owner: google, version: 1.6.1
+
+name: leveldb, nameSpecified: leveldb, owner: firebase, version: 1.22.2
+
+name: nanopb, nameSpecified: nanopb, owner: firebase, version: 2.30908.0
+
+name: promises, nameSpecified: Promises, owner: google, version: 1.2.12
+
+name: RxCoreLocation, nameSpecified: RxCoreLocation, owner: fummicc1, version: 
+
+name: RxMKMapView, nameSpecified: RxMKMapView, owner: RxSwiftCommunity, version: 6.0.0
+
+name: RxSwift, nameSpecified: RxSwift, owner: ReactiveX, version: 6.2.0
+
+name: SFSafeSymbols, nameSpecified: SFSafeSymbols, owner: piknotech, version: 2.1.3
+
+name: SnapKit, nameSpecified: SnapKit, owner: SnapKit, version: 5.0.1
+
+name: StubKit, nameSpecified: StubKit, owner: kateinoigakukun, version: 0.1.7
+
+name: swift-protobuf, nameSpecified: SwiftProtobuf, owner: apple, version: 1.17.0
+
+name: SwiftUICharts, nameSpecified: SwiftUICharts, owner: mecid, version: 0.6.3
+
+name: SwiftyUserDefaults, nameSpecified: SwiftyUserDefaults, owner: sunshinejr, version: 5.3.0
+
+add-version-numbers: false
+
+LicensePlist Version: 3.13.0

@@ -1,0 +1,6 @@
+[submodule "RxCoreLocation"]
+	path = RxCoreLocation
+	url = https://github.com/RxSwiftCommunity/RxCoreLocation.git
+[submodule "BuildTools/swift-format"]
+	path = BuildTools/swift-format
+	url = https://github.com/apple/swift-format

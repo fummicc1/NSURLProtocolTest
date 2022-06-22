@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="ToiletMap" customModuleProvider="target">
+            <connections>
+                <outlet property="searchResultCollectionView" destination="5qK-bf-se1" id="qHR-Qn-nNV"/>
+                <outlet property="searchResultRootStackView" destination="27a-lg-FhT" id="d3n-Y6-2gL"/>
+                <outlet property="toggleButton" destination="HWk-yo-ULq" id="rt0-uJ-Xfj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" alignment="center" spacing="4" id="4pC-p2-yKr" customClass="IntrinsicContentStackView" customModule="ToiletMap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="532"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4F-Zv-Zgg">
+                    <rect key="frame" x="0.0" y="0.0" width="366" height="44"/>
+                    <color key="backgroundColor" name="SecondaryBackgroundColor"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="27a-lg-FhT" customClass="IntrinsicContentStackView" customModule="ToiletMap" customModuleProvider="target">
+                    <rect key="frame" x="24" y="90" width="318" height="300"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5qK-bf-se1">
+                            <rect key="frame" x="0.0" y="0.0" width="318" height="300"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dH6-Kz-aOH">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="A08-Nm-wD9"/>
+                        <constraint firstItem="5qK-bf-se1" firstAttribute="top" secondItem="27a-lg-FhT" secondAttribute="top" id="PFa-98-26E"/>
+                        <constraint firstAttribute="trailing" secondItem="5qK-bf-se1" secondAttribute="trailing" id="Zlf-QD-sma"/>
+                        <constraint firstItem="5qK-bf-se1" firstAttribute="leading" secondItem="27a-lg-FhT" secondAttribute="leading" id="uUe-CB-5Wj"/>
+                        <constraint firstAttribute="bottom" secondItem="5qK-bf-se1" secondAttribute="bottom" id="vDr-Pl-jyq"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="COQ-do-DnG" customClass="IntrinsicContentStackView" customModule="ToiletMap" customModuleProvider="target">
+                    <rect key="frame" x="163" y="436" width="40.5" height="38"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWk-yo-ULq" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="40.5" height="38"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal">
+                                <color key="titleColor" systemColor="labelColor"/>
+                                <imageReference key="image" image="chevron.up" catalog="system" symbolScale="large"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnA-8u-YFw">
+                    <rect key="frame" x="0.0" y="520" width="366" height="12"/>
+                    <color key="backgroundColor" name="SecondaryBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="H0O-XN-PhQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="LvZ-kz-L7b"/>
+            <constraints>
+                <constraint firstItem="NnA-8u-YFw" firstAttribute="bottom" secondItem="LvZ-kz-L7b" secondAttribute="bottom" id="AGk-ws-JWS"/>
+                <constraint firstItem="h4F-Zv-Zgg" firstAttribute="leading" secondItem="4pC-p2-yKr" secondAttribute="leading" id="Ghy-zc-UHK"/>
+                <constraint firstItem="NnA-8u-YFw" firstAttribute="leading" secondItem="LvZ-kz-L7b" secondAttribute="leading" id="JDX-x8-xWc"/>
+                <constraint firstItem="27a-lg-FhT" firstAttribute="leading" secondItem="4pC-p2-yKr" secondAttribute="leading" constant="24" id="Mdd-4v-SMc"/>
+                <constraint firstItem="LvZ-kz-L7b" firstAttribute="top" secondItem="h4F-Zv-Zgg" secondAttribute="bottom" id="NA7-Yr-XdO"/>
+                <constraint firstItem="h4F-Zv-Zgg" firstAttribute="top" secondItem="4pC-p2-yKr" secondAttribute="top" id="Xkt-Pf-lVB"/>
+                <constraint firstAttribute="trailing" secondItem="h4F-Zv-Zgg" secondAttribute="trailing" id="c5B-wV-ziY"/>
+                <constraint firstAttribute="trailing" secondItem="27a-lg-FhT" secondAttribute="trailing" constant="24" id="q7M-CH-P6j"/>
+                <constraint firstItem="NnA-8u-YFw" firstAttribute="trailing" secondItem="LvZ-kz-L7b" secondAttribute="trailing" id="whR-vy-dUx"/>
+            </constraints>
+            <point key="canvasLocation" x="-114.49275362318842" y="685.71428571428567"/>
+        </stackView>
+    </objects>
+    <resources>
+        <image name="chevron.up" catalog="system" width="128" height="72"/>
+        <namedColor name="SecondaryBackgroundColor">
+            <color red="0.96862745098039216" green="0.95294117647058818" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

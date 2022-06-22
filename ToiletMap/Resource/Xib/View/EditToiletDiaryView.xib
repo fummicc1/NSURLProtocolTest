@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditToiletDiaryView" customModule="ToiletMap" customModuleProvider="target">
+            <connections>
+                <outlet property="_view" destination="5BK-HA-Iw5" id="Pch-0n-e2k"/>
+                <outlet property="dateContainerView" destination="gJN-fD-aDY" id="fmQ-ok-9C0"/>
+                <outlet property="datePicker" destination="Gc3-MX-ekf" id="HDl-yo-1cu"/>
+                <outlet property="deleteButton" destination="4VH-I8-ddj" id="ztg-Qh-T2D"/>
+                <outlet property="diaryDateLabel" destination="4KY-OW-5sx" id="UVi-9v-7DM"/>
+                <outlet property="diaryTimeLabel" destination="c0s-wZ-0HO" id="ojO-v5-ofz"/>
+                <outlet property="memoTextView" destination="sBm-2a-bBb" id="5Jp-fj-8uH"/>
+                <outlet property="peeAndPoopButton" destination="zQO-DE-0wO" id="exr-Qg-fdL"/>
+                <outlet property="peeButton" destination="qhZ-Wt-6ox" id="jbm-Ye-tmk"/>
+                <outlet property="poopButton" destination="VLY-dT-YfU" id="eGC-lS-gEG"/>
+                <outlet property="saveButton" destination="Gzk-RZ-e34" id="jbw-Y2-2dU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5BK-HA-Iw5">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COy-LR-mP3">
+                    <rect key="frame" x="16" y="60" width="382" height="688"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="2Lc-VB-Mzg">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="429"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJN-fD-aDY">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="194"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="GgH-mG-nVJ">
+                                            <rect key="frame" x="24" y="16" width="334" height="154"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="5FP-Ey-Vmd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="75.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日付の設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO0-RZ-L91">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Gc3-MX-ekf">
+                                                            <rect key="frame" x="0.0" y="20.5" width="334" height="55"/>
+                                                        </datePicker>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="I7z-3T-LyX">
+                                                    <rect key="frame" x="0.0" y="99.5" width="334" height="54.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8月5日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KY-OW-5sx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0s-wZ-0HO">
+                                                            <rect key="frame" x="0.0" y="24.5" width="334" height="30"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="SecondaryBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="GgH-mG-nVJ" secondAttribute="bottom" constant="24" id="Ce2-tp-Nw6"/>
+                                        <constraint firstItem="GgH-mG-nVJ" firstAttribute="leading" secondItem="gJN-fD-aDY" secondAttribute="leading" constant="24" id="JQc-A4-ybJ"/>
+                                        <constraint firstItem="GgH-mG-nVJ" firstAttribute="top" secondItem="gJN-fD-aDY" secondAttribute="top" constant="16" id="dYj-LJ-ut4"/>
+                                        <constraint firstAttribute="trailing" secondItem="GgH-mG-nVJ" secondAttribute="trailing" constant="24" id="wy3-ZH-INC"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vHl-MY-ijF">
+                                    <rect key="frame" x="0.0" y="226" width="382" height="133"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;種類を選んでください&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-o6-zFb">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bLm-9X-xNg">
+                                            <rect key="frame" x="0.0" y="24.5" width="382" height="108.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="flt-7m-rj6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="117.5" height="108.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhZ-Wt-6ox" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                                            <rect key="frame" x="10.5" y="0.0" width="96" height="88"/>
+                                                            <inset key="contentEdgeInsets" minX="8" minY="4" maxX="8" maxY="4"/>
+                                                            <state key="normal" image="pee"/>
+                                                            <state key="selected" image="pee_fill"/>
+                                                            <state key="highlighted" image="pee_fill"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="おしっこ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOc-0u-hO0">
+                                                            <rect key="frame" x="24" y="88" width="69.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nir-qA-MDM">
+                                                    <rect key="frame" x="132.5" y="0.0" width="117" height="108.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLY-dT-YfU" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                                            <rect key="frame" x="10.5" y="0.0" width="96" height="88"/>
+                                                            <inset key="contentEdgeInsets" minX="8" minY="4" maxX="8" maxY="4"/>
+                                                            <state key="normal" image="poop"/>
+                                                            <state key="selected" image="poop_fill"/>
+                                                            <state key="highlighted" image="poop_fill"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="うんち" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-re-nj4">
+                                                            <rect key="frame" x="32.5" y="88" width="52" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wdn-oH-5sX">
+                                                    <rect key="frame" x="264.5" y="0.0" width="117.5" height="108.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQO-DE-0wO" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                                            <rect key="frame" x="11" y="0.0" width="96" height="88"/>
+                                                            <inset key="contentEdgeInsets" minX="8" minY="4" maxX="8" maxY="4"/>
+                                                            <state key="normal" image="pee_poop"/>
+                                                            <state key="selected" image="pee_poop_fill"/>
+                                                            <state key="highlighted" image="pee_poop_fill"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="両方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtQ-O2-Ia6">
+                                                            <rect key="frame" x="41.5" y="88" width="35" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="APb-o7-3Mg">
+                                    <rect key="frame" x="0.0" y="391" width="382" height="38"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sBm-2a-bBb" customClass="PlaceholderTextView" customModule="ToiletMap" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="350" height="38"/>
+                                            <color key="backgroundColor" name="SecondaryBackgroundColor"/>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="sBm-2a-bBb" firstAttribute="leading" secondItem="APb-o7-3Mg" secondAttribute="leading" constant="16" id="4oe-fC-bNF"/>
+                                        <constraint firstAttribute="trailing" secondItem="sBm-2a-bBb" secondAttribute="trailing" constant="16" id="8jl-Il-eRp"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="urQ-QP-gzb" firstAttribute="trailing" secondItem="2Lc-VB-Mzg" secondAttribute="trailing" id="1rp-2N-tZj"/>
+                        <constraint firstItem="urQ-QP-gzb" firstAttribute="top" secondItem="2Lc-VB-Mzg" secondAttribute="top" id="d6R-mR-nnz"/>
+                        <constraint firstItem="urQ-QP-gzb" firstAttribute="bottom" secondItem="2Lc-VB-Mzg" secondAttribute="bottom" id="jTg-F5-rhJ"/>
+                        <constraint firstItem="2Lc-VB-Mzg" firstAttribute="leading" secondItem="urQ-QP-gzb" secondAttribute="leading" id="jef-F4-o7r"/>
+                        <constraint firstItem="2Lc-VB-Mzg" firstAttribute="width" secondItem="5EH-bX-eV4" secondAttribute="width" id="zdr-6l-axf"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="urQ-QP-gzb"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="5EH-bX-eV4"/>
+                </scrollView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="OwW-Nk-6z4">
+                    <rect key="frame" x="40" y="780" width="334" height="42"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VH-I8-ddj" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="151" height="42"/>
+                            <color key="backgroundColor" name="DangerColor"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="12" maxX="16" maxY="12"/>
+                            <state key="normal" title="削除">
+                                <color key="titleColor" name="BackgroundColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzk-RZ-e34" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                            <rect key="frame" x="183" y="0.0" width="151" height="42"/>
+                            <color key="backgroundColor" name="MainColor"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="12" maxX="16" maxY="12"/>
+                            <state key="normal" title="保存">
+                                <color key="titleColor" name="BackgroundColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wjt-fI-Y3g"/>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wjt-fI-Y3g" firstAttribute="bottom" secondItem="OwW-Nk-6z4" secondAttribute="bottom" constant="40" id="3gv-9g-7Xk"/>
+                <constraint firstItem="OwW-Nk-6z4" firstAttribute="leading" secondItem="wjt-fI-Y3g" secondAttribute="leading" constant="40" id="4Lq-p3-ioZ"/>
+                <constraint firstItem="OwW-Nk-6z4" firstAttribute="centerX" secondItem="5BK-HA-Iw5" secondAttribute="centerX" id="67b-No-iLs"/>
+                <constraint firstItem="COy-LR-mP3" firstAttribute="trailing" secondItem="wjt-fI-Y3g" secondAttribute="trailing" constant="-16" id="7ly-mT-Idc"/>
+                <constraint firstItem="COy-LR-mP3" firstAttribute="top" secondItem="wjt-fI-Y3g" secondAttribute="top" constant="16" id="JBz-FN-wPr"/>
+                <constraint firstItem="OwW-Nk-6z4" firstAttribute="top" secondItem="COy-LR-mP3" secondAttribute="bottom" constant="32" id="Zaz-yz-4QK"/>
+                <constraint firstItem="COy-LR-mP3" firstAttribute="leading" secondItem="5BK-HA-Iw5" secondAttribute="leading" constant="16" id="bjH-YM-gMv"/>
+            </constraints>
+            <point key="canvasLocation" x="34.782608695652179" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pee" width="80" height="80"/>
+        <image name="pee_fill" width="80" height="80"/>
+        <image name="pee_poop" width="80" height="80"/>
+        <image name="pee_poop_fill" width="80" height="80"/>
+        <image name="poop" width="80" height="80"/>
+        <image name="poop_fill" width="80" height="80"/>
+        <namedColor name="BackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="DangerColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryBackgroundColor">
+            <color red="0.96862745098039216" green="0.95294117647058818" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

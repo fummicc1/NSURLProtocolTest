@@ -1,0 +1,2447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27E6880223A3447CACF98AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D78CE3160E7CA671BAFA9D0 /* AppDelegate.swift */; };
+		4DD2D5549027B74850B8EC23 /* Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE136B583A2EDD3B143A05D4 /* Toilet.swift */; };
+		BAD6B9EFBE1E9318144643DA /* ClassName+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FF037469BD29BEBD9B113 /* ClassName+Extention.swift */; };
+		C39B3A12DDE8C701A7ED6210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BF41D937D6E3A8D7816E36 /* Assets.xcassets */; };
+		D30509FE26B54A8A00186AD1 /* LocalToiletDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30509FD26B54A8A00186AD1 /* LocalToiletDiary.swift */; };
+		D3050A0026B5753300186AD1 /* ToiletDiaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30509FF26B5753300186AD1 /* ToiletDiaryRepository.swift */; };
+		D3050A0226B5933D00186AD1 /* ToiletDiaryFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3050A0126B5933D00186AD1 /* ToiletDiaryFragment.swift */; };
+		D308CBE127FF40AA0073F11E /* FirebaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308CBE027FF40AA0073F11E /* FirebaseAssembly.swift */; };
+		D308CBE327FF41DC0073F11E /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D308CBE227FF41DC0073F11E /* Swinject */; };
+		D308CBE527FF49860073F11E /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308CBE427FF49860073F11E /* RepositoryAssembly.swift */; };
+		D3092C09265E2AEE008F5A0B /* HomeToiletDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3092C08265E2AEE008F5A0B /* HomeToiletDetailViewModel.swift */; };
+		D3092C0B265E2C10008F5A0B /* HomeToiletDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3092C0A265E2C10008F5A0B /* HomeToiletDetailViewController.swift */; };
+		D3092C0D265E2D55008F5A0B /* HomeToiletDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3092C0C265E2D55008F5A0B /* HomeToiletDetailViewController.xib */; };
+		D311181424324DAA00F2A12E /* ArchiveListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311181224324DAA00F2A12E /* ArchiveListTableViewCell.swift */; };
+		D311181524324DAA00F2A12E /* ArchiveListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D311181324324DAA00F2A12E /* ArchiveListTableViewCell.xib */; };
+		D31204B725E4EB1F00194079 /* IntrinsicContentStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31204B625E4EB1F00194079 /* IntrinsicContentStackView.swift */; };
+		D31204BC25E4ECE200194079 /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31204BB25E4ECE200194079 /* PlaceholderTextView.swift */; };
+		D31426FA25D28AA300C1EC07 /* MapItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31426F925D28AA300C1EC07 /* MapItemRepository.swift */; };
+		D31D7704265EF57A005B44AE /* SettingCollectionSignInWithAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D7703265EF57A005B44AE /* SettingCollectionSignInWithAppleCell.swift */; };
+		D31D7A5523E05FAA00C70DCC /* ToiletMapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D7A5423E05FAA00C70DCC /* ToiletMapViewModelTests.swift */; };
+		D31D7A5A23E068E200C70DCC /* CLLocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D7A5923E068E200C70DCC /* CLLocationManagerTests.swift */; };
+		D31F049526CBC6BD001D1BA5 /* ToiletDiaryDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F049326CBC6BD001D1BA5 /* ToiletDiaryDayViewController.swift */; };
+		D31F049626CBC6BD001D1BA5 /* ToiletDiaryDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31F049426CBC6BD001D1BA5 /* ToiletDiaryDayViewController.xib */; };
+		D31F049926CBC7EB001D1BA5 /* ToiletDiaryListPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F049826CBC7EB001D1BA5 /* ToiletDiaryListPageViewController.swift */; };
+		D31F049B26CBC969001D1BA5 /* ToiletDiaryDayResultFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F049A26CBC969001D1BA5 /* ToiletDiaryDayResultFragment.swift */; };
+		D322D48123C1C5F400BB314B /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D322D47F23C1C5F400BB314B /* TermsOfServiceViewController.swift */; };
+		D322D48223C1C5F400BB314B /* TermsOfServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D322D48023C1C5F400BB314B /* TermsOfServiceViewController.xib */; };
+		D3283BD126B989D40002AF5A /* ToiletDiaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3283BD026B989D40002AF5A /* ToiletDiaryListViewController.swift */; };
+		D3283BD326B989F00002AF5A /* ToiletDiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3283BD226B989F00002AF5A /* ToiletDiaryListViewModel.swift */; };
+		D3283BD726B98A5F0002AF5A /* CreateToiletDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3283BD626B98A5F0002AF5A /* CreateToiletDiaryViewController.swift */; };
+		D3283BD926B98A780002AF5A /* CreateToiletDiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3283BD826B98A780002AF5A /* CreateToiletDiaryViewModel.swift */; };
+		D330CFF423BD0FAB00F9F33D /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330CFF323BD0FAB00F9F33D /* AlertMessage.swift */; };
+		D330CFF623BD198900F9F33D /* FirestoreCollcetionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330CFF523BD198900F9F33D /* FirestoreCollcetionName.swift */; };
+		D330CFF823BD42EB00F9F33D /* Array+isNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330CFF723BD42EB00F9F33D /* Array+isNotEmpty.swift */; };
+		D3352FA223C4750C00949BD2 /* CLLocationCoordinate2D+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3352FA123C4750C00949BD2 /* CLLocationCoordinate2D+Distance.swift */; };
+		D3352FA623C4789D00949BD2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3352FA523C4789D00949BD2 /* SearchViewModel.swift */; };
+		D3352FAC23C4920900949BD2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3352FAB23C4920900949BD2 /* BaseViewController.swift */; };
+		D3352FAE23C495FD00949BD2 /* ReviewScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3352FAD23C495FD00949BD2 /* ReviewScore.swift */; };
+		D33A770423BF211900A244D7 /* UIView+getSpecificConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A770323BF211900A244D7 /* UIView+getSpecificConstraints.swift */; };
+		D33B89C225D19BC200343B11 /* CreateToiletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B89C125D19BC200343B11 /* CreateToiletViewModel.swift */; };
+		D33B89C825D19EB300343B11 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B89C725D19EB300343B11 /* ReviewViewModel.swift */; };
+		D33EB4A1242E2A09001078D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33EB49F242E2A09001078D2 /* HomeViewController.swift */; };
+		D33EB4A2242E2A09001078D2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33EB4A0242E2A09001078D2 /* HomeViewController.xib */; };
+		D33F440023BB839A00C8C30F /* ToiletPolylineRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F43FF23BB839A00C8C30F /* ToiletPolylineRenderer.swift */; };
+		D34799F025D31EE600A9D74A /* ReviewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34799EF25D31EE600A9D74A /* ReviewRepository.swift */; };
+		D347B7ED23BCB03F004F1D1A /* ToiletMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347B7EC23BCB03F004F1D1A /* ToiletMapViewModel.swift */; };
+		D349A62B25FCE729004F8C3F /* ToiletTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349A62A25FCE729004F8C3F /* ToiletTabViewController.swift */; };
+		D349A63125FCE76F004F8C3F /* ToiletTabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349A63025FCE76F004F8C3F /* ToiletTabPageViewController.swift */; };
+		D349A63B25FCE8FA004F8C3F /* CreateToiletListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349A63925FCE8FA004F8C3F /* CreateToiletListViewController.swift */; };
+		D349A63C25FCE8FA004F8C3F /* CreateToiletListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D349A63A25FCE8FA004F8C3F /* CreateToiletListViewController.xib */; };
+		D349A64425FCE9E7004F8C3F /* CreateToiletListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349A64325FCE9E7004F8C3F /* CreateToiletListViewModel.swift */; };
+		D34C0A5527FA1D94005B1500 /* AlgoliaSearchClient in Frameworks */ = {isa = PBXBuildFile; productRef = D34C0A5427FA1D94005B1500 /* AlgoliaSearchClient */; };
+		D34E61CC23C4B7FF00AC0738 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34E61CB23C4B7FF00AC0738 /* SearchViewController.xib */; };
+		D351F2AC2706110D002249EF /* ToiletDiaryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D351F2AB2706110D002249EF /* ToiletDiaryDetailView.xib */; };
+		D351F2AE270611C0002249EF /* ToiletCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D351F2AD270611C0002249EF /* ToiletCardView.xib */; };
+		D355197723C6C62F00930D2C /* RadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355197623C6C62E00930D2C /* RadiusButton.swift */; };
+		D355197923C6C78F00930D2C /* ShadowRadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355197823C6C78F00930D2C /* ShadowRadiusButton.swift */; };
+		D355E5B526026708002336AA /* ToiletFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355E5B426026708002336AA /* ToiletFragment.swift */; };
+		D355E5BA2602673C002336AA /* MeFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355E5B92602673C002336AA /* MeFragment.swift */; };
+		D355E5BF260268F0002336AA /* ReviewFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355E5BE260268F0002336AA /* ReviewFragment.swift */; };
+		D355E5D026026A16002336AA /* RecentlyViewedToiletFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355E5CF26026A16002336AA /* RecentlyViewedToiletFragment.swift */; };
+		D355E5D726026CA4002336AA /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355E5D626026CA4002336AA /* Mapper.swift */; };
+		D356A4B925DD661200C88F09 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356A4B825DD661200C88F09 /* SettingsViewController.swift */; };
+		D356A4C725DD675600C88F09 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D356A4C625DD675600C88F09 /* SettingsViewController.xib */; };
+		D356B39826B59B01005F077D /* ToiletDiaryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356B39726B59B01005F077D /* ToiletDiaryMapper.swift */; };
+		D357B4EA26A7D391000F7AC9 /* ReviewGraphicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D357B4E926A7D391000F7AC9 /* ReviewGraphicalView.swift */; };
+		D35D2F0623D7495E008E89E0 /* LocalStorageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35D2F0523D7495E008E89E0 /* LocalStorageClient.swift */; };
+		D35DB9D923E045380046E343 /* ToiletMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DB9D823E045380046E343 /* ToiletMapTests.swift */; };
+		D35DB9E823E045450046E343 /* ToiletMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DB9E723E045450046E343 /* ToiletMapUITests.swift */; };
+		D35EC7BD25DF894700B28305 /* ToiletRefGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35EC7BC25DF894600B28305 /* ToiletRefGenerator.swift */; };
+		D35ECA2523C3656300C13F9F /* Array+doesNotContain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35ECA2423C3656300C13F9F /* Array+doesNotContain.swift */; };
+		D35ECA2723C373E800C13F9F /* ToiletDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35ECA2623C373E800C13F9F /* ToiletDetailViewModel.swift */; };
+		D35ECA2923C3740700C13F9F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35ECA2823C3740700C13F9F /* BaseViewModel.swift */; };
+		D367890823648B3D00A2A645 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367890723648B3D00A2A645 /* XibView.swift */; };
+		D36EC8EC26AE46B30072C436 /* ShadowFloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36EC8EB26AE46B30072C436 /* ShadowFloatyItem.swift */; };
+		D36EC8EE26AE49CF0072C436 /* ColoredSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36EC8ED26AE49CF0072C436 /* ColoredSwitch.swift */; };
+		D36EC8F026AE873B0072C436 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36EC8EF26AE873B0072C436 /* OnboardingViewController.xib */; };
+		D36EC8F326AE88B90072C436 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36EC8F226AE88B90072C436 /* OnboardingViewController.swift */; };
+		D36EC8F526AE89020072C436 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36EC8F426AE89020072C436 /* OnboardingViewModel.swift */; };
+		D36FBA1626A817A50011BCB4 /* LocalNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36FBA1526A817A50011BCB4 /* LocalNotificationService.swift */; };
+		D3705A0026CA7B700015A247 /* ToiletDiaryWeekEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37059FF26CA7B700015A247 /* ToiletDiaryWeekEventView.xib */; };
+		D3705A0226CA7B920015A247 /* ToiletDiaryWeekEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3705A0126CA7B920015A247 /* ToiletDiaryWeekEventView.swift */; };
+		D3705A0526CA80990015A247 /* EditToiletDiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3705A0426CA80990015A247 /* EditToiletDiaryViewModel.swift */; };
+		D3705A0726CA864C0015A247 /* EditToiletDiaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3705A0626CA864C0015A247 /* EditToiletDiaryViewController.xib */; };
+		D3705A0926CA869A0015A247 /* EditToiletDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3705A0826CA869A0015A247 /* EditToiletDiaryViewController.swift */; };
+		D3705A0B26CA96270015A247 /* ToiletDiaryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3705A0A26CA96270015A247 /* ToiletDiaryEditView.swift */; };
+		D3705A1026CA973C0015A247 /* EditToiletDiaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3705A0F26CA973C0015A247 /* EditToiletDiaryView.xib */; };
+		D3746B17281541ED002497E8 /* ToiletDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3746B16281541ED002497E8 /* ToiletDiary.swift */; };
+		D3748E94256FAB6B000622A4 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3748E93256FAB6B000622A4 /* AppColor.swift */; };
+		D3748EA8256FE0DC000622A4 /* UIViewController+HandleAlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3748EA7256FE0DC000622A4 /* UIViewController+HandleAlertMessage.swift */; };
+		D376D1C425CDC0F30042E1D9 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376D1C325CDC0F30042E1D9 /* UserRepository.swift */; };
+		D376D59A25CDC1BD0042E1D9 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376D59925CDC1BD0042E1D9 /* AuthRepository.swift */; };
+		D37B245423C23C4000335B4A /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37B245323C23C4000335B4A /* ReviewViewController.swift */; };
+		D37F0F9626010D8900AD91A7 /* ToiletTabLayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37F0F9526010D8900AD91A7 /* ToiletTabLayoutItem.swift */; };
+		D37F0F9B2601150900AD91A7 /* ReviewToiletListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37F0F9A2601150900AD91A7 /* ReviewToiletListViewController.swift */; };
+		D37F0FA02601156000AD91A7 /* ReviewToiletListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37F0F9F2601156000AD91A7 /* ReviewToiletListViewModel.swift */; };
+		D38337D925A863AB003EA365 /* ToiletDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38337D725A863AB003EA365 /* ToiletDetailViewController.swift */; };
+		D38337DA25A863AB003EA365 /* ToiletMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38337D825A863AB003EA365 /* ToiletMapViewController.swift */; };
+		D38337E325A8A469003EA365 /* ToiletRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38337E225A8A469003EA365 /* ToiletRepository.swift */; };
+		D385638B27FB54D600048372 /* GoogleService-Info-Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = D385638A27FB54D600048372 /* GoogleService-Info-Develop.plist */; };
+		D386130B23E873F8009BBEBC /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D386130A23E873F8009BBEBC /* SnapshotHelper.swift */; };
+		D38F2E1B26BFC5E7007D0604 /* ToiletMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D38F2E1A26BFC5E7007D0604 /* ToiletMapView.xib */; };
+		D38F2E1D26BFC881007D0604 /* MKMapView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F2E1C26BFC881007D0604 /* MKMapView+Ex.swift */; };
+		D394DAE825B1D3430070BBB5 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394DAE725B1D3430070BBB5 /* MessageView.swift */; };
+		D394DAED25B1D3980070BBB5 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D394DAEC25B1D3980070BBB5 /* MessageView.xib */; };
+		D3953D9D265ABE42007C461D /* HomeToiletUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3953D9C265ABE42007C461D /* HomeToiletUsecase.swift */; };
+		D39703F323C4719700F4CA33 /* LocationShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39703F223C4719700F4CA33 /* LocationShared.swift */; };
+		D39738762364256500F72AFE /* ToiletMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39738752364256500F72AFE /* ToiletMapAnnotation.swift */; };
+		D397387A23643C4500F72AFE /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D397387923643C4500F72AFE /* UIImage+Ex.swift */; };
+		D397387F236445B100F72AFE /* CreateToiletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D397387D236445B100F72AFE /* CreateToiletViewController.swift */; };
+		D3973880236445B100F72AFE /* CreateToiletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D397387E236445B100F72AFE /* CreateToiletViewController.xib */; };
+		D39D3D9A23BEF7D50042FA17 /* ToiletDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39D3D9923BEF7D50042FA17 /* ToiletDetailViewController.xib */; };
+		D39FCBBE2363D017002BB2FF /* ToiletMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39FCBBC2363D017002BB2FF /* ToiletMapViewController.xib */; };
+		D3A08A9B28282756003CFAEE /* SearchToiletResultCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A08A9A28282756003CFAEE /* SearchToiletResultCollectionHeaderView.swift */; };
+		D3A43A5423C7205B003BA28F /* CLLocationCoordinate2D+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A43A5323C7205B003BA28F /* CLLocationCoordinate2D+Equatable.swift */; };
+		D3A43A5623C72FE8003BA28F /* ToiletMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A43A5523C72FE8003BA28F /* ToiletMapAnnotationView.swift */; };
+		D3A63515269DA0A9003D1BB3 /* FocusReviewToiletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A63514269DA0A9003D1BB3 /* FocusReviewToiletViewController.swift */; };
+		D3A63517269DA162003D1BB3 /* FocusReviewToiletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A63516269DA162003D1BB3 /* FocusReviewToiletViewController.xib */; };
+		D3A63519269DA203003D1BB3 /* EditReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A63518269DA203003D1BB3 /* EditReviewView.swift */; };
+		D3A6351B269DA231003D1BB3 /* EditReviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A6351A269DA231003D1BB3 /* EditReviewView.xib */; };
+		D3A6351D269DAAB8003D1BB3 /* FocusReviewToiletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6351C269DAAB8003D1BB3 /* FocusReviewToiletViewModel.swift */; };
+		D3A759A62824FB2C007A2DF6 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = D3A759A52824FB2C007A2DF6 /* NVActivityIndicatorView */; };
+		D3A759AA28252668007A2DF6 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = D3A759A928252668007A2DF6 /* NVActivityIndicatorViewExtended */; };
+		D3A759AC28252B8A007A2DF6 /* SearchToiletResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A759AB28252B8A007A2DF6 /* SearchToiletResultViewController.swift */; };
+		D3AB304526BBA6F0002C0D07 /* CreateToiletDiaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3AB304426BBA6F0002C0D07 /* CreateToiletDiaryViewController.xib */; };
+		D3AB304726BBAC53002C0D07 /* ToiletMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AB304626BBAC53002C0D07 /* ToiletMapView.swift */; };
+		D3ABDB2925D881E0003F6B2F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDB2825D881E0003F6B2F /* NavigationController.swift */; };
+		D3AC5CAB26F5DF8000424BBA /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AC5CAA26F5DF8000424BBA /* BarButtonItem.swift */; };
+		D3B2225A23645CA900A49868 /* String+isNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B2225923645CA900A49868 /* String+isNotEmpty.swift */; };
+		D3B28D9C26037A28009E1556 /* FocusToiletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B28D9B26037A28009E1556 /* FocusToiletViewModel.swift */; };
+		D3B28DA126037B0F009E1556 /* ToiletUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B28DA026037B0F009E1556 /* ToiletUseCase.swift */; };
+		D3B28DA626039A39009E1556 /* LocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B28DA526039A39009E1556 /* LocationUseCase.swift */; };
+		D3B28DB12603BCB2009E1556 /* ReviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B28DB02603BCB2009E1556 /* ReviewUseCase.swift */; };
+		D3B28DB62603BF34009E1556 /* ArchivedToiletUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B28DB52603BF34009E1556 /* ArchivedToiletUseCase.swift */; };
+		D3B28DBB260441C8009E1556 /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B28DBA260441C8009E1556 /* AuthUseCase.swift */; };
+		D3B28DC02604645F009E1556 /* ArchivedToiletFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B28DBF2604645F009E1556 /* ArchivedToiletFragment.swift */; };
+		D3B28DC526047F1F009E1556 /* MapItemUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B28DC426047F1F009E1556 /* MapItemUseCase.swift */; };
+		D3B3E80826B7EE3100CD85CB /* RealmInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3E80726B7EE3100CD85CB /* RealmInjector.swift */; };
+		D3B3E80D26B80D0900CD85CB /* ToiletDiaryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3E80C26B80D0900CD85CB /* ToiletDiaryUseCase.swift */; };
+		D3B47D362605A2460065797A /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B47D352605A2460065797A /* EmptyStateView.swift */; };
+		D3C83D8124076A5C00ACBDF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C83D8024076A5C00ACBDF5 /* User.swift */; };
+		D3CD222223DC42B000535FE2 /* BaseViewController+AppearBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CD222123DC42B000535FE2 /* BaseViewController+AppearBlurView.swift */; };
+		D3CD222C23DC596D00535FE2 /* RadiusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CD222B23DC596D00535FE2 /* RadiusImageView.swift */; };
+		D3CD687223C051CA004E3A30 /* Bool+Reverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CD687123C051CA004E3A30 /* Bool+Reverse.swift */; };
+		D3CFEE9723C2BC95000DBE95 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3CFEE9623C2BC95000DBE95 /* GoogleService-Info-Release.plist */; };
+		D3CFEE9923C2C9B6000DBE95 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CFEE9823C2C9B6000DBE95 /* ReviewViewController.xib */; };
+		D3CFEE9B23C2D1F7000DBE95 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CFEE9A23C2D1F7000DBE95 /* Review.swift */; };
+		D3D61FF523BAC35E00E7BDE5 /* UIViewController+AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D61FF423BAC35E00E7BDE5 /* UIViewController+AlertView.swift */; };
+		D3D6235626C3D47B00500A5F /* ToiletDiaryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D6235526C3D47B00500A5F /* ToiletDiaryListViewController.xib */; };
+		D3D72FFC2673CE89000FAA44 /* ToiletDetailFloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D72FFB2673CE89000FAA44 /* ToiletDetailFloatingPanel.swift */; };
+		D3D72FFE2673CF83000FAA44 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3D72FFD2673CF83000FAA44 /* Settings.bundle */; };
+		D3D7AD0527FA050100EC51BC /* RxCombine in Frameworks */ = {isa = PBXBuildFile; productRef = D3D7AD0427FA050100EC51BC /* RxCombine */; };
+		D3D945422819BC1E00842081 /* ToiletDiaryListCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D945412819BC1E00842081 /* ToiletDiaryListCollectionHeaderView.swift */; };
+		D3DB317B26024D170072353D /* RecentlyToilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB317A26024D170072353D /* RecentlyToilet.swift */; };
+		D3DEE0E2265DD3BD00EF4006 /* CreateHomeToiletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEE0E1265DD3BD00EF4006 /* CreateHomeToiletViewController.swift */; };
+		D3DEE0E4265DD3FB00EF4006 /* CreateHomeToiletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEE0E3265DD3FB00EF4006 /* CreateHomeToiletViewModel.swift */; };
+		D3DEE0E6265DDB4D00EF4006 /* CustomUserTrackingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEE0E5265DDB4D00EF4006 /* CustomUserTrackingButton.swift */; };
+		D3DEE0EA265DDF7800EF4006 /* CreateHomeToiletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3DEE0E9265DDF7800EF4006 /* CreateHomeToiletViewController.xib */; };
+		D3E2DDB625DD697E000597A3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2DDB525DD697E000597A3 /* SettingsViewModel.swift */; };
+		D3E30CF2269FF4E5008A3A80 /* SettingCollectionSignOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E30CF1269FF4E5008A3A80 /* SettingCollectionSignOutCell.swift */; };
+		D3E7592325DE2CFA00B898CE /* SettingsCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7592225DE2CFA00B898CE /* SettingsCollectionHeaderView.swift */; };
+		D3E7592E25DE330200B898CE /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7592D25DE330200B898CE /* UserDefaults.swift */; };
+		D3E7593325DE33A200B898CE /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7593225DE33A200B898CE /* UIColor+Extensions.swift */; };
+		D3E7593825DE372B00B898CE /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7593725DE372B00B898CE /* BorderView.swift */; };
+		D3EA7FBF242F613700A7F486 /* ArchiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA7FBD242F613700A7F486 /* ArchiveListViewController.swift */; };
+		D3EA7FC0242F613700A7F486 /* ArchiveListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3EA7FBE242F613700A7F486 /* ArchiveListViewController.xib */; };
+		D3EA7FCA242F861300A7F486 /* ArchiveListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA7FC9242F861300A7F486 /* ArchiveListViewModel.swift */; };
+		D3EADB9528016CC400A8B180 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADB9428016CC400A8B180 /* SearchResultCell.swift */; };
+		D3EADB972801719400A8B180 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADB962801719400A8B180 /* DividerView.swift */; };
+		D3EAF61A262EEFFF0004286F /* ToiletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EAF619262EEFFF0004286F /* ToiletCardView.swift */; };
+		D3EAF61F262EF0130004286F /* ToiletCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EAF61E262EF0130004286F /* ToiletCardViewController.swift */; };
+		D3EC48D52601A1FB001D4A0C /* ReviewToiletListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3EC48D42601A1FB001D4A0C /* ReviewToiletListViewController.xib */; };
+		D3F8CB9523BE7B7900A5FF5F /* UISearchBar+SearchTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F8CB9423BE7B7900A5FF5F /* UISearchBar+SearchTokenModel.swift */; };
+		D3F996AD2603151600195BB4 /* UserFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F996AC2603151600195BB4 /* UserFragment.swift */; };
+		D3F9A8232602608C00D282FB /* FocusToiletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9A8212602608C00D282FB /* FocusToiletViewController.swift */; };
+		D3F9A8242602608C00D282FB /* FocusToiletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F9A8222602608C00D282FB /* FocusToiletViewController.xib */; };
+		D3FA5F302572E8B40098F94A /* UIImage+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA5F2F2572E8B40098F94A /* UIImage+Text.swift */; };
+		D3FA9EE526AC23A900E1E545 /* ToiletRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA9EE426AC23A900E1E545 /* ToiletRepositoryStub.swift */; };
+		D3FAE8F127F8A4CA00AAAF8A /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE8F027F8A4CA00AAAF8A /* SFSafeSymbols */; };
+		D3FAE8F327F8A4CA00AAAF8A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE8F227F8A4CA00AAAF8A /* SnapKit */; };
+		D3FAE8F527F8A4CA00AAAF8A /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE8F427F8A4CA00AAAF8A /* SwiftyUserDefaults */; };
+		D3FAE8F727F8A4CA00AAAF8A /* RxMKMapView in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE8F627F8A4CA00AAAF8A /* RxMKMapView */; };
+		D3FAE8F927F8A4CA00AAAF8A /* StubKit in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE8F827F8A4CA00AAAF8A /* StubKit */; };
+		D3FAE8FB27F8A4CA00AAAF8A /* Floaty in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE8FA27F8A4CA00AAAF8A /* Floaty */; };
+		D3FAE8FD27F8A4CA00AAAF8A /* Aiolos in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE8FC27F8A4CA00AAAF8A /* Aiolos */; };
+		D3FAE90227F8A5E900AAAF8A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE90127F8A5E900AAAF8A /* RealmSwift */; };
+		D3FAE90627F8A60100AAAF8A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE90527F8A60100AAAF8A /* FirebaseAuth */; };
+		D3FAE90F27F8A69600AAAF8A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE90E27F8A69600AAAF8A /* Realm */; };
+		D3FAE91227F8A6D700AAAF8A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE91127F8A6D700AAAF8A /* RxCocoa */; };
+		D3FAE91427F8A6D700AAAF8A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE91327F8A6D700AAAF8A /* RxRelay */; };
+		D3FAE91627F8A6D700AAAF8A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE91527F8A6D700AAAF8A /* RxSwift */; };
+		D3FAE91827F9165F00AAAF8A /* EasyFirebaseSwiftAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE91727F9165F00AAAF8A /* EasyFirebaseSwiftAuth */; };
+		D3FAE91A27F9165F00AAAF8A /* EasyFirebaseSwiftFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE91927F9165F00AAAF8A /* EasyFirebaseSwiftFirestore */; };
+		D3FAE91C27F9169500AAAF8A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE91B27F9169500AAAF8A /* FirebaseFirestore */; };
+		D3FAE91E27F9169500AAAF8A /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE91D27F9169500AAAF8A /* FirebaseFirestoreSwift-Beta */; };
+		D3FAE92227F917C700AAAF8A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE92127F917C700AAAF8A /* FirebaseAnalytics */; };
+		D3FAE92427F9182B00AAAF8A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE92327F9182B00AAAF8A /* FirebaseCrashlytics */; };
+		D3FAE92627F91EA000AAAF8A /* RxRealm in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE92527F91EA000AAAF8A /* RxRealm */; };
+		D3FAE92C27F9D86D00AAAF8A /* RxCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE92B27F9D86D00AAAF8A /* RxCoreLocation */; };
+		D3FAE92E27F9D96900AAAF8A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = D3FAE92D27F9D96900AAAF8A /* SwiftUICharts */; };
+		D3FBB5B5262B036500119417 /* HomeToilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FBB5B4262B036500119417 /* HomeToilet.swift */; };
+		D3FBB5BA262B04A800119417 /* HomeToiletFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FBB5B9262B04A800119417 /* HomeToiletFragment.swift */; };
+		D3FBF78A260522860077CAF0 /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FBF789260522860077CAF0 /* UserUseCase.swift */; };
+		D3FC500A2363DBCD00E39AC7 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FC50092363DBCD00E39AC7 /* Shadow.swift */; };
+		D3FC500C2363DC2400E39AC7 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FC500B2363DC2400E39AC7 /* ShadowButton.swift */; };
+		D3FCBD9626159082006D4313 /* PrivateToilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FCBD9526159082006D4313 /* PrivateToilet.swift */; };
+		D3FDF02B262EF08E0039BCF3 /* ToiletCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FDF02A262EF08E0039BCF3 /* ToiletCardViewModel.swift */; };
+		D3FE9AE325F91CC300824149 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FE9AE225F91CC300824149 /* TabBarController.swift */; };
+		F26AB78743F9A7A9A9B4FDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B770B9FEB30CD616CB811C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D35DB9DB23E045380046E343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86F7AED5BAA9A34C437BD724 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E86AE80631A0EC9149A6CFE;
+			remoteInfo = ToiletMap;
+		};
+		D35DB9EA23E045450046E343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86F7AED5BAA9A34C437BD724 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E86AE80631A0EC9149A6CFE;
+			remoteInfo = ToiletMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D78CE3160E7CA671BAFA9D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24B770B9FEB30CD616CB811C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B8C7CF0F3D514E9413DE0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		933D2E4B22786DA64993FD75 /* ToiletMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToiletMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43FF037469BD29BEBD9B113 /* ClassName+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassName+Extention.swift"; sourceTree = "<group>"; };
+		C4BF41D937D6E3A8D7816E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE136B583A2EDD3B143A05D4 /* Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilet.swift; sourceTree = "<group>"; };
+		D30509FD26B54A8A00186AD1 /* LocalToiletDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalToiletDiary.swift; sourceTree = "<group>"; };
+		D30509FF26B5753300186AD1 /* ToiletDiaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryRepository.swift; sourceTree = "<group>"; };
+		D3050A0126B5933D00186AD1 /* ToiletDiaryFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryFragment.swift; sourceTree = "<group>"; };
+		D308CBE027FF40AA0073F11E /* FirebaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAssembly.swift; sourceTree = "<group>"; };
+		D308CBE427FF49860073F11E /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
+		D3092C08265E2AEE008F5A0B /* HomeToiletDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeToiletDetailViewModel.swift; sourceTree = "<group>"; };
+		D3092C0A265E2C10008F5A0B /* HomeToiletDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeToiletDetailViewController.swift; sourceTree = "<group>"; };
+		D3092C0C265E2D55008F5A0B /* HomeToiletDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeToiletDetailViewController.xib; sourceTree = "<group>"; };
+		D311181224324DAA00F2A12E /* ArchiveListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveListTableViewCell.swift; sourceTree = "<group>"; };
+		D311181324324DAA00F2A12E /* ArchiveListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchiveListTableViewCell.xib; sourceTree = "<group>"; };
+		D31204B625E4EB1F00194079 /* IntrinsicContentStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicContentStackView.swift; sourceTree = "<group>"; };
+		D31204BB25E4ECE200194079 /* PlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
+		D31426F925D28AA300C1EC07 /* MapItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItemRepository.swift; sourceTree = "<group>"; };
+		D31D7703265EF57A005B44AE /* SettingCollectionSignInWithAppleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCollectionSignInWithAppleCell.swift; sourceTree = "<group>"; };
+		D31D7A5423E05FAA00C70DCC /* ToiletMapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletMapViewModelTests.swift; sourceTree = "<group>"; };
+		D31D7A5923E068E200C70DCC /* CLLocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManagerTests.swift; sourceTree = "<group>"; };
+		D31F049326CBC6BD001D1BA5 /* ToiletDiaryDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryDayViewController.swift; sourceTree = "<group>"; };
+		D31F049426CBC6BD001D1BA5 /* ToiletDiaryDayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletDiaryDayViewController.xib; sourceTree = "<group>"; };
+		D31F049826CBC7EB001D1BA5 /* ToiletDiaryListPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryListPageViewController.swift; sourceTree = "<group>"; };
+		D31F049A26CBC969001D1BA5 /* ToiletDiaryDayResultFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryDayResultFragment.swift; sourceTree = "<group>"; };
+		D322D47F23C1C5F400BB314B /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewController.swift; sourceTree = "<group>"; };
+		D322D48023C1C5F400BB314B /* TermsOfServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsOfServiceViewController.xib; sourceTree = "<group>"; };
+		D3283BD026B989D40002AF5A /* ToiletDiaryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryListViewController.swift; sourceTree = "<group>"; };
+		D3283BD226B989F00002AF5A /* ToiletDiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryListViewModel.swift; sourceTree = "<group>"; };
+		D3283BD626B98A5F0002AF5A /* CreateToiletDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateToiletDiaryViewController.swift; sourceTree = "<group>"; };
+		D3283BD826B98A780002AF5A /* CreateToiletDiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateToiletDiaryViewModel.swift; sourceTree = "<group>"; };
+		D330CFF323BD0FAB00F9F33D /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		D330CFF523BD198900F9F33D /* FirestoreCollcetionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreCollcetionName.swift; sourceTree = "<group>"; };
+		D330CFF723BD42EB00F9F33D /* Array+isNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+isNotEmpty.swift"; sourceTree = "<group>"; };
+		D3352FA123C4750C00949BD2 /* CLLocationCoordinate2D+Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Distance.swift"; sourceTree = "<group>"; };
+		D3352FA523C4789D00949BD2 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		D3352FAB23C4920900949BD2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D3352FAD23C495FD00949BD2 /* ReviewScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewScore.swift; sourceTree = "<group>"; };
+		D33A770323BF211900A244D7 /* UIView+getSpecificConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+getSpecificConstraints.swift"; sourceTree = "<group>"; };
+		D33B89C125D19BC200343B11 /* CreateToiletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateToiletViewModel.swift; sourceTree = "<group>"; };
+		D33B89C725D19EB300343B11 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		D33EB49F242E2A09001078D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D33EB4A0242E2A09001078D2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D33F43FF23BB839A00C8C30F /* ToiletPolylineRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletPolylineRenderer.swift; sourceTree = "<group>"; };
+		D34799EF25D31EE600A9D74A /* ReviewRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRepository.swift; sourceTree = "<group>"; };
+		D347B7EC23BCB03F004F1D1A /* ToiletMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletMapViewModel.swift; sourceTree = "<group>"; };
+		D349A62A25FCE729004F8C3F /* ToiletTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletTabViewController.swift; sourceTree = "<group>"; };
+		D349A63025FCE76F004F8C3F /* ToiletTabPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletTabPageViewController.swift; sourceTree = "<group>"; };
+		D349A63925FCE8FA004F8C3F /* CreateToiletListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateToiletListViewController.swift; sourceTree = "<group>"; };
+		D349A63A25FCE8FA004F8C3F /* CreateToiletListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateToiletListViewController.xib; sourceTree = "<group>"; };
+		D349A64325FCE9E7004F8C3F /* CreateToiletListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateToiletListViewModel.swift; sourceTree = "<group>"; };
+		D34E61CB23C4B7FF00AC0738 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		D351F2AB2706110D002249EF /* ToiletDiaryDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletDiaryDetailView.xib; sourceTree = "<group>"; };
+		D351F2AD270611C0002249EF /* ToiletCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletCardView.xib; sourceTree = "<group>"; };
+		D355197623C6C62E00930D2C /* RadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusButton.swift; sourceTree = "<group>"; };
+		D355197823C6C78F00930D2C /* ShadowRadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowRadiusButton.swift; sourceTree = "<group>"; };
+		D355E5B426026708002336AA /* ToiletFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletFragment.swift; sourceTree = "<group>"; };
+		D355E5B92602673C002336AA /* MeFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeFragment.swift; sourceTree = "<group>"; };
+		D355E5BE260268F0002336AA /* ReviewFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFragment.swift; sourceTree = "<group>"; };
+		D355E5CF26026A16002336AA /* RecentlyViewedToiletFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyViewedToiletFragment.swift; sourceTree = "<group>"; };
+		D355E5D626026CA4002336AA /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		D356A4B825DD661200C88F09 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D356A4C625DD675600C88F09 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		D356B39726B59B01005F077D /* ToiletDiaryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryMapper.swift; sourceTree = "<group>"; };
+		D357B4E926A7D391000F7AC9 /* ReviewGraphicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewGraphicalView.swift; sourceTree = "<group>"; };
+		D35D2F0523D7495E008E89E0 /* LocalStorageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageClient.swift; sourceTree = "<group>"; };
+		D35DB9D623E045380046E343 /* ToiletMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToiletMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35DB9D823E045380046E343 /* ToiletMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletMapTests.swift; sourceTree = "<group>"; };
+		D35DB9DA23E045380046E343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35DB9E523E045450046E343 /* ToiletMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToiletMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35DB9E723E045450046E343 /* ToiletMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletMapUITests.swift; sourceTree = "<group>"; };
+		D35DB9E923E045450046E343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35EC7BC25DF894600B28305 /* ToiletRefGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletRefGenerator.swift; sourceTree = "<group>"; };
+		D35ECA2423C3656300C13F9F /* Array+doesNotContain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+doesNotContain.swift"; sourceTree = "<group>"; };
+		D35ECA2623C373E800C13F9F /* ToiletDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailViewModel.swift; sourceTree = "<group>"; };
+		D35ECA2823C3740700C13F9F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		D367890723648B3D00A2A645 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		D36EC8EB26AE46B30072C436 /* ShadowFloatyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowFloatyItem.swift; sourceTree = "<group>"; };
+		D36EC8ED26AE49CF0072C436 /* ColoredSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSwitch.swift; sourceTree = "<group>"; };
+		D36EC8EF26AE873B0072C436 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		D36EC8F226AE88B90072C436 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		D36EC8F426AE89020072C436 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		D36FBA1526A817A50011BCB4 /* LocalNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationService.swift; sourceTree = "<group>"; };
+		D37059FF26CA7B700015A247 /* ToiletDiaryWeekEventView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletDiaryWeekEventView.xib; sourceTree = "<group>"; };
+		D3705A0126CA7B920015A247 /* ToiletDiaryWeekEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryWeekEventView.swift; sourceTree = "<group>"; };
+		D3705A0426CA80990015A247 /* EditToiletDiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToiletDiaryViewModel.swift; sourceTree = "<group>"; };
+		D3705A0626CA864C0015A247 /* EditToiletDiaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditToiletDiaryViewController.xib; sourceTree = "<group>"; };
+		D3705A0826CA869A0015A247 /* EditToiletDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditToiletDiaryViewController.swift; sourceTree = "<group>"; };
+		D3705A0A26CA96270015A247 /* ToiletDiaryEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryEditView.swift; sourceTree = "<group>"; };
+		D3705A0F26CA973C0015A247 /* EditToiletDiaryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditToiletDiaryView.xib; sourceTree = "<group>"; };
+		D3746B16281541ED002497E8 /* ToiletDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiary.swift; sourceTree = "<group>"; };
+		D3748E93256FAB6B000622A4 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		D3748EA7256FE0DC000622A4 /* UIViewController+HandleAlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+HandleAlertMessage.swift"; sourceTree = "<group>"; };
+		D376D1C325CDC0F30042E1D9 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		D376D59925CDC1BD0042E1D9 /* AuthRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		D37B245323C23C4000335B4A /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		D37F0F9526010D8900AD91A7 /* ToiletTabLayoutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletTabLayoutItem.swift; sourceTree = "<group>"; };
+		D37F0F9A2601150900AD91A7 /* ReviewToiletListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewToiletListViewController.swift; sourceTree = "<group>"; };
+		D37F0F9F2601156000AD91A7 /* ReviewToiletListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewToiletListViewModel.swift; sourceTree = "<group>"; };
+		D38337D725A863AB003EA365 /* ToiletDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletDetailViewController.swift; sourceTree = "<group>"; };
+		D38337D825A863AB003EA365 /* ToiletMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletMapViewController.swift; sourceTree = "<group>"; };
+		D38337E225A8A469003EA365 /* ToiletRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletRepository.swift; sourceTree = "<group>"; };
+		D385638A27FB54D600048372 /* GoogleService-Info-Develop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Develop.plist"; sourceTree = "<group>"; };
+		D386130A23E873F8009BBEBC /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		D38E70A72812C52C00EA182F /* ToiletMapRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToiletMapRelease.entitlements; sourceTree = "<group>"; };
+		D38E70A82812C56000EA182F /* ToiletMapDevelop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToiletMapDevelop.entitlements; sourceTree = "<group>"; };
+		D38F2E1A26BFC5E7007D0604 /* ToiletMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletMapView.xib; sourceTree = "<group>"; };
+		D38F2E1C26BFC881007D0604 /* MKMapView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Ex.swift"; sourceTree = "<group>"; };
+		D394DAE725B1D3430070BBB5 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		D394DAEC25B1D3980070BBB5 /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		D3953D9C265ABE42007C461D /* HomeToiletUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeToiletUsecase.swift; sourceTree = "<group>"; };
+		D39703F223C4719700F4CA33 /* LocationShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationShared.swift; sourceTree = "<group>"; };
+		D39738752364256500F72AFE /* ToiletMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletMapAnnotation.swift; sourceTree = "<group>"; };
+		D397387923643C4500F72AFE /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
+		D397387D236445B100F72AFE /* CreateToiletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateToiletViewController.swift; sourceTree = "<group>"; };
+		D397387E236445B100F72AFE /* CreateToiletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateToiletViewController.xib; sourceTree = "<group>"; };
+		D39D3D9923BEF7D50042FA17 /* ToiletDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletDetailViewController.xib; sourceTree = "<group>"; };
+		D39FCBBC2363D017002BB2FF /* ToiletMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletMapViewController.xib; sourceTree = "<group>"; };
+		D3A08A9A28282756003CFAEE /* SearchToiletResultCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchToiletResultCollectionHeaderView.swift; sourceTree = "<group>"; };
+		D3A43A5323C7205B003BA28F /* CLLocationCoordinate2D+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Equatable.swift"; sourceTree = "<group>"; };
+		D3A43A5523C72FE8003BA28F /* ToiletMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletMapAnnotationView.swift; sourceTree = "<group>"; };
+		D3A63514269DA0A9003D1BB3 /* FocusReviewToiletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusReviewToiletViewController.swift; sourceTree = "<group>"; };
+		D3A63516269DA162003D1BB3 /* FocusReviewToiletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusReviewToiletViewController.xib; sourceTree = "<group>"; };
+		D3A63518269DA203003D1BB3 /* EditReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReviewView.swift; sourceTree = "<group>"; };
+		D3A6351A269DA231003D1BB3 /* EditReviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditReviewView.xib; sourceTree = "<group>"; };
+		D3A6351C269DAAB8003D1BB3 /* FocusReviewToiletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusReviewToiletViewModel.swift; sourceTree = "<group>"; };
+		D3A759AB28252B8A007A2DF6 /* SearchToiletResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchToiletResultViewController.swift; sourceTree = "<group>"; };
+		D3AB304426BBA6F0002C0D07 /* CreateToiletDiaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateToiletDiaryViewController.xib; sourceTree = "<group>"; };
+		D3AB304626BBAC53002C0D07 /* ToiletMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletMapView.swift; sourceTree = "<group>"; };
+		D3ABDB2825D881E0003F6B2F /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		D3AC5CAA26F5DF8000424BBA /* BarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
+		D3B2225923645CA900A49868 /* String+isNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isNotEmpty.swift"; sourceTree = "<group>"; };
+		D3B28D9B26037A28009E1556 /* FocusToiletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusToiletViewModel.swift; sourceTree = "<group>"; };
+		D3B28DA026037B0F009E1556 /* ToiletUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletUseCase.swift; sourceTree = "<group>"; };
+		D3B28DA526039A39009E1556 /* LocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUseCase.swift; sourceTree = "<group>"; };
+		D3B28DB02603BCB2009E1556 /* ReviewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewUseCase.swift; sourceTree = "<group>"; };
+		D3B28DB52603BF34009E1556 /* ArchivedToiletUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedToiletUseCase.swift; sourceTree = "<group>"; };
+		D3B28DBA260441C8009E1556 /* AuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
+		D3B28DBF2604645F009E1556 /* ArchivedToiletFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedToiletFragment.swift; sourceTree = "<group>"; };
+		D3B28DC426047F1F009E1556 /* MapItemUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItemUseCase.swift; sourceTree = "<group>"; };
+		D3B3E80726B7EE3100CD85CB /* RealmInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmInjector.swift; sourceTree = "<group>"; };
+		D3B3E80C26B80D0900CD85CB /* ToiletDiaryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryUseCase.swift; sourceTree = "<group>"; };
+		D3B47D352605A2460065797A /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		D3C83D8024076A5C00ACBDF5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D3CD222123DC42B000535FE2 /* BaseViewController+AppearBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController+AppearBlurView.swift"; sourceTree = "<group>"; };
+		D3CD222B23DC596D00535FE2 /* RadiusImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusImageView.swift; sourceTree = "<group>"; };
+		D3CD687123C051CA004E3A30 /* Bool+Reverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Reverse.swift"; sourceTree = "<group>"; };
+		D3CFEE9623C2BC95000DBE95 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
+		D3CFEE9823C2C9B6000DBE95 /* ReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
+		D3CFEE9A23C2D1F7000DBE95 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		D3D61FF423BAC35E00E7BDE5 /* UIViewController+AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertView.swift"; sourceTree = "<group>"; };
+		D3D6235526C3D47B00500A5F /* ToiletDiaryListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletDiaryListViewController.xib; sourceTree = "<group>"; };
+		D3D72FFB2673CE89000FAA44 /* ToiletDetailFloatingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailFloatingPanel.swift; sourceTree = "<group>"; };
+		D3D72FFD2673CF83000FAA44 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D3D945412819BC1E00842081 /* ToiletDiaryListCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDiaryListCollectionHeaderView.swift; sourceTree = "<group>"; };
+		D3DB317A26024D170072353D /* RecentlyToilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyToilet.swift; sourceTree = "<group>"; };
+		D3DEE0E1265DD3BD00EF4006 /* CreateHomeToiletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHomeToiletViewController.swift; sourceTree = "<group>"; };
+		D3DEE0E3265DD3FB00EF4006 /* CreateHomeToiletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHomeToiletViewModel.swift; sourceTree = "<group>"; };
+		D3DEE0E5265DDB4D00EF4006 /* CustomUserTrackingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserTrackingButton.swift; sourceTree = "<group>"; };
+		D3DEE0E9265DDF7800EF4006 /* CreateHomeToiletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateHomeToiletViewController.xib; sourceTree = "<group>"; };
+		D3E2DDB525DD697E000597A3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		D3E30CF1269FF4E5008A3A80 /* SettingCollectionSignOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCollectionSignOutCell.swift; sourceTree = "<group>"; };
+		D3E7591E25DE1F5100B898CE /* ToiletMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToiletMap.entitlements; sourceTree = "<group>"; };
+		D3E7592225DE2CFA00B898CE /* SettingsCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCollectionHeaderView.swift; sourceTree = "<group>"; };
+		D3E7592D25DE330200B898CE /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		D3E7593225DE33A200B898CE /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		D3E7593725DE372B00B898CE /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		D3EA7FBD242F613700A7F486 /* ArchiveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveListViewController.swift; sourceTree = "<group>"; };
+		D3EA7FBE242F613700A7F486 /* ArchiveListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchiveListViewController.xib; sourceTree = "<group>"; };
+		D3EA7FC9242F861300A7F486 /* ArchiveListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveListViewModel.swift; sourceTree = "<group>"; };
+		D3EADB9428016CC400A8B180 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		D3EADB962801719400A8B180 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		D3EAF619262EEFFF0004286F /* ToiletCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletCardView.swift; sourceTree = "<group>"; };
+		D3EAF61E262EF0130004286F /* ToiletCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletCardViewController.swift; sourceTree = "<group>"; };
+		D3EC48D42601A1FB001D4A0C /* ReviewToiletListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewToiletListViewController.xib; sourceTree = "<group>"; };
+		D3F8CB9423BE7B7900A5FF5F /* UISearchBar+SearchTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+SearchTokenModel.swift"; sourceTree = "<group>"; };
+		D3F996AC2603151600195BB4 /* UserFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFragment.swift; sourceTree = "<group>"; };
+		D3F9A8212602608C00D282FB /* FocusToiletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusToiletViewController.swift; sourceTree = "<group>"; };
+		D3F9A8222602608C00D282FB /* FocusToiletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusToiletViewController.xib; sourceTree = "<group>"; };
+		D3FA5F2F2572E8B40098F94A /* UIImage+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Text.swift"; sourceTree = "<group>"; };
+		D3FA9EE426AC23A900E1E545 /* ToiletRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletRepositoryStub.swift; sourceTree = "<group>"; };
+		D3FAE92A27F9D85600AAAF8A /* RxCoreLocation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RxCoreLocation; sourceTree = "<group>"; };
+		D3FBB5B4262B036500119417 /* HomeToilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeToilet.swift; sourceTree = "<group>"; };
+		D3FBB5B9262B04A800119417 /* HomeToiletFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeToiletFragment.swift; sourceTree = "<group>"; };
+		D3FBF789260522860077CAF0 /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
+		D3FC50092363DBCD00E39AC7 /* Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		D3FC500B2363DC2400E39AC7 /* ShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
+		D3FCBD9526159082006D4313 /* PrivateToilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateToilet.swift; sourceTree = "<group>"; };
+		D3FDF02A262EF08E0039BCF3 /* ToiletCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletCardViewModel.swift; sourceTree = "<group>"; };
+		D3FE9AE225F91CC300824149 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D35DB9D323E045380046E343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35DB9E223E045450046E343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE41FFAE66F54658A5DCF061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3FAE90F27F8A69600AAAF8A /* Realm in Frameworks */,
+				D3FAE8F127F8A4CA00AAAF8A /* SFSafeSymbols in Frameworks */,
+				D3FAE8FD27F8A4CA00AAAF8A /* Aiolos in Frameworks */,
+				D3FAE8FB27F8A4CA00AAAF8A /* Floaty in Frameworks */,
+				D3FAE91C27F9169500AAAF8A /* FirebaseFirestore in Frameworks */,
+				D3FAE90227F8A5E900AAAF8A /* RealmSwift in Frameworks */,
+				D3FAE91A27F9165F00AAAF8A /* EasyFirebaseSwiftFirestore in Frameworks */,
+				D3FAE92E27F9D96900AAAF8A /* SwiftUICharts in Frameworks */,
+				D3FAE8F527F8A4CA00AAAF8A /* SwiftyUserDefaults in Frameworks */,
+				D3A759AA28252668007A2DF6 /* NVActivityIndicatorViewExtended in Frameworks */,
+				D34C0A5527FA1D94005B1500 /* AlgoliaSearchClient in Frameworks */,
+				D3A759A62824FB2C007A2DF6 /* NVActivityIndicatorView in Frameworks */,
+				D3FAE92227F917C700AAAF8A /* FirebaseAnalytics in Frameworks */,
+				D3D7AD0527FA050100EC51BC /* RxCombine in Frameworks */,
+				D3FAE91827F9165F00AAAF8A /* EasyFirebaseSwiftAuth in Frameworks */,
+				D3FAE91627F8A6D700AAAF8A /* RxSwift in Frameworks */,
+				D3FAE8F727F8A4CA00AAAF8A /* RxMKMapView in Frameworks */,
+				D3FAE8F327F8A4CA00AAAF8A /* SnapKit in Frameworks */,
+				D3FAE90627F8A60100AAAF8A /* FirebaseAuth in Frameworks */,
+				D3FAE92627F91EA000AAAF8A /* RxRealm in Frameworks */,
+				D3FAE92427F9182B00AAAF8A /* FirebaseCrashlytics in Frameworks */,
+				D3FAE91227F8A6D700AAAF8A /* RxCocoa in Frameworks */,
+				D3FAE91E27F9169500AAAF8A /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				D308CBE327FF41DC0073F11E /* Swinject in Frameworks */,
+				D3FAE91427F8A6D700AAAF8A /* RxRelay in Frameworks */,
+				D3FAE8F927F8A4CA00AAAF8A /* StubKit in Frameworks */,
+				D3FAE92C27F9D86D00AAAF8A /* RxCoreLocation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A40F81B2C90077892D4D883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				933D2E4B22786DA64993FD75 /* ToiletMap.app */,
+				D35DB9D623E045380046E343 /* ToiletMapTests.xctest */,
+				D35DB9E523E045450046E343 /* ToiletMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		206B38A68CDEC233C2B3EB20 /* ToiletMap */ = {
+			isa = PBXGroup;
+			children = (
+				D38E70A82812C56000EA182F /* ToiletMapDevelop.entitlements */,
+				D38E70A72812C52C00EA182F /* ToiletMapRelease.entitlements */,
+				D3E7591E25DE1F5100B898CE /* ToiletMap.entitlements */,
+				D39DD25C235EA4B000529C1D /* Resource */,
+				D39DD25B235EA4AB00529C1D /* Source */,
+			);
+			path = ToiletMap;
+			sourceTree = "<group>";
+		};
+		3A21CD8C37D6D032AD3F4BD2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				D355197623C6C62E00930D2C /* RadiusButton.swift */,
+				D3FC50092363DBCD00E39AC7 /* Shadow.swift */,
+				D3FC500B2363DC2400E39AC7 /* ShadowButton.swift */,
+				D355197823C6C78F00930D2C /* ShadowRadiusButton.swift */,
+				D39738752364256500F72AFE /* ToiletMapAnnotation.swift */,
+				D33F43FF23BB839A00C8C30F /* ToiletPolylineRenderer.swift */,
+				D367890723648B3D00A2A645 /* XibView.swift */,
+				D3A43A5523C72FE8003BA28F /* ToiletMapAnnotationView.swift */,
+				D3CD222B23DC596D00535FE2 /* RadiusImageView.swift */,
+				D31204B625E4EB1F00194079 /* IntrinsicContentStackView.swift */,
+				D31204BB25E4ECE200194079 /* PlaceholderTextView.swift */,
+				D3DEE0E5265DDB4D00EF4006 /* CustomUserTrackingButton.swift */,
+				D36EC8EB26AE46B30072C436 /* ShadowFloatyItem.swift */,
+				D36EC8ED26AE49CF0072C436 /* ColoredSwitch.swift */,
+				D3AB304626BBAC53002C0D07 /* ToiletMapView.swift */,
+				D3EADB962801719400A8B180 /* DividerView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		91BF08B1803260DD723FDC65 = {
+			isa = PBXGroup;
+			children = (
+				D3FAE92927F9D85600AAAF8A /* Packages */,
+				D3D72FFD2673CF83000FAA44 /* Settings.bundle */,
+				206B38A68CDEC233C2B3EB20 /* ToiletMap */,
+				D35DB9D723E045380046E343 /* ToiletMapTests */,
+				D35DB9E623E045450046E343 /* ToiletMapUITests */,
+				1A40F81B2C90077892D4D883 /* Products */,
+				D36FBA1226A8060B0011BCB4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A27B3A146626F8E042C97994 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D35ECA2423C3656300C13F9F /* Array+doesNotContain.swift */,
+				D330CFF723BD42EB00F9F33D /* Array+isNotEmpty.swift */,
+				D3CD687123C051CA004E3A30 /* Bool+Reverse.swift */,
+				B43FF037469BD29BEBD9B113 /* ClassName+Extention.swift */,
+				D3B2225923645CA900A49868 /* String+isNotEmpty.swift */,
+				D397387923643C4500F72AFE /* UIImage+Ex.swift */,
+				D3F8CB9423BE7B7900A5FF5F /* UISearchBar+SearchTokenModel.swift */,
+				D33A770323BF211900A244D7 /* UIView+getSpecificConstraints.swift */,
+				D3D61FF423BAC35E00E7BDE5 /* UIViewController+AlertView.swift */,
+				D3352FA123C4750C00949BD2 /* CLLocationCoordinate2D+Distance.swift */,
+				D3A43A5323C7205B003BA28F /* CLLocationCoordinate2D+Equatable.swift */,
+				D3CD222123DC42B000535FE2 /* BaseViewController+AppearBlurView.swift */,
+				D3FA5F2F2572E8B40098F94A /* UIImage+Text.swift */,
+				D3E7593225DE33A200B898CE /* UIColor+Extensions.swift */,
+				D38F2E1C26BFC881007D0604 /* MKMapView+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B422E38A462E6E5C2BE3DE2D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D3283BCD26B97FEA0002AF5A /* ToiletDiary */,
+				D36EC8F126AE88A90072C436 /* Onboarding */,
+				D33EB49F242E2A09001078D2 /* HomeViewController.swift */,
+				D322D47F23C1C5F400BB314B /* TermsOfServiceViewController.swift */,
+				D3092BF7265E28F4008F5A0B /* Base */,
+				D3092BF9265E2917008F5A0B /* Map */,
+				D3092BFA265E291F008F5A0B /* Settings */,
+				D349A62F25FCE75E004F8C3F /* ToiletTab */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D30509FB26B5490500186AD1 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				D30509FD26B54A8A00186AD1 /* LocalToiletDiary.swift */,
+				D3B3E80726B7EE3100CD85CB /* RealmInjector.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		D30509FC26B5491600186AD1 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				D3C83D8024076A5C00ACBDF5 /* User.swift */,
+				CE136B583A2EDD3B143A05D4 /* Toilet.swift */,
+				D3CFEE9A23C2D1F7000DBE95 /* Review.swift */,
+				D3DB317A26024D170072353D /* RecentlyToilet.swift */,
+				D3FCBD9526159082006D4313 /* PrivateToilet.swift */,
+				D3FBB5B4262B036500119417 /* HomeToilet.swift */,
+				D3746B16281541ED002497E8 /* ToiletDiary.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		D308CBDF27FF40860073F11E /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				D308CBE027FF40AA0073F11E /* FirebaseAssembly.swift */,
+				D308CBE427FF49860073F11E /* RepositoryAssembly.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		D3092BF6265E28DA008F5A0B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D3D72FFA2673CC59000FAA44 /* NewToiletDetail */,
+				D3092C05265E2A77008F5A0B /* HomeToiletDetail */,
+				D3092C04265E2A6E008F5A0B /* ToiletDetail */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D3092BF7265E28F4008F5A0B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D3352FAB23C4920900949BD2 /* BaseViewController.swift */,
+				D3092BFB265E2947008F5A0B /* ViewModels */,
+				D3ABDB2825D881E0003F6B2F /* NavigationController.swift */,
+				D3748EA7256FE0DC000622A4 /* UIViewController+HandleAlertMessage.swift */,
+				D3FE9AE225F91CC300824149 /* TabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D3092BF9265E2917008F5A0B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D3092BFD265E297E008F5A0B /* MapView */,
+				D3092BFC265E2954008F5A0B /* Search */,
+				D3092BFE265E29AA008F5A0B /* Create */,
+				D3092BF6265E28DA008F5A0B /* Detail */,
+				D3092BFF265E29AF008F5A0B /* Review */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D3092BFA265E291F008F5A0B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D3DEE0E3265DD3FB00EF4006 /* CreateHomeToiletViewModel.swift */,
+				D33B89C125D19BC200343B11 /* CreateToiletViewModel.swift */,
+				D356A4B825DD661200C88F09 /* SettingsViewController.swift */,
+				D3E2DDB525DD697E000597A3 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D3092BFB265E2947008F5A0B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D35ECA2823C3740700C13F9F /* BaseViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D3092BFC265E2954008F5A0B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D3352FA523C4789D00949BD2 /* SearchViewModel.swift */,
+				D3EADB9428016CC400A8B180 /* SearchResultCell.swift */,
+				D3A759AB28252B8A007A2DF6 /* SearchToiletResultViewController.swift */,
+				D3A08A9A28282756003CFAEE /* SearchToiletResultCollectionHeaderView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D3092BFD265E297E008F5A0B /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				D347B7EC23BCB03F004F1D1A /* ToiletMapViewModel.swift */,
+				D38337D825A863AB003EA365 /* ToiletMapViewController.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		D3092BFE265E29AA008F5A0B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				D3DEE0E1265DD3BD00EF4006 /* CreateHomeToiletViewController.swift */,
+				D397387D236445B100F72AFE /* CreateToiletViewController.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		D3092BFF265E29AF008F5A0B /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				D37B245323C23C4000335B4A /* ReviewViewController.swift */,
+				D33B89C725D19EB300343B11 /* ReviewViewModel.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		D3092C00265E29BA008F5A0B /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9A8212602608C00D282FB /* FocusToiletViewController.swift */,
+				D3B28D9B26037A28009E1556 /* FocusToiletViewModel.swift */,
+				D3A63514269DA0A9003D1BB3 /* FocusReviewToiletViewController.swift */,
+				D3A6351C269DAAB8003D1BB3 /* FocusReviewToiletViewModel.swift */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		D3092C01265E29CD008F5A0B /* ReviewList */ = {
+			isa = PBXGroup;
+			children = (
+				D37F0F9F2601156000AD91A7 /* ReviewToiletListViewModel.swift */,
+				D37F0F9A2601150900AD91A7 /* ReviewToiletListViewController.swift */,
+			);
+			path = ReviewList;
+			sourceTree = "<group>";
+		};
+		D3092C02265E29D4008F5A0B /* CreateList */ = {
+			isa = PBXGroup;
+			children = (
+				D349A64325FCE9E7004F8C3F /* CreateToiletListViewModel.swift */,
+				D349A63925FCE8FA004F8C3F /* CreateToiletListViewController.swift */,
+			);
+			path = CreateList;
+			sourceTree = "<group>";
+		};
+		D3092C03265E29DC008F5A0B /* ArchiveList */ = {
+			isa = PBXGroup;
+			children = (
+				D3EA7FC9242F861300A7F486 /* ArchiveListViewModel.swift */,
+				D3EA7FBD242F613700A7F486 /* ArchiveListViewController.swift */,
+			);
+			path = ArchiveList;
+			sourceTree = "<group>";
+		};
+		D3092C04265E2A6E008F5A0B /* ToiletDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D35ECA2623C373E800C13F9F /* ToiletDetailViewModel.swift */,
+				D38337D725A863AB003EA365 /* ToiletDetailViewController.swift */,
+			);
+			path = ToiletDetail;
+			sourceTree = "<group>";
+		};
+		D3092C05265E2A77008F5A0B /* HomeToiletDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D3092C08265E2AEE008F5A0B /* HomeToiletDetailViewModel.swift */,
+				D3092C0A265E2C10008F5A0B /* HomeToiletDetailViewController.swift */,
+			);
+			path = HomeToiletDetail;
+			sourceTree = "<group>";
+		};
+		D311181124324D8F00F2A12E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D394DAEC25B1D3980070BBB5 /* MessageView.xib */,
+				D311181324324DAA00F2A12E /* ArchiveListTableViewCell.xib */,
+				D3A6351A269DA231003D1BB3 /* EditReviewView.xib */,
+				D38F2E1A26BFC5E7007D0604 /* ToiletMapView.xib */,
+				D37059FF26CA7B700015A247 /* ToiletDiaryWeekEventView.xib */,
+				D3705A0F26CA973C0015A247 /* EditToiletDiaryView.xib */,
+				D351F2AB2706110D002249EF /* ToiletDiaryDetailView.xib */,
+				D351F2AD270611C0002249EF /* ToiletCardView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D311181624324DB900F2A12E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D394DAE725B1D3430070BBB5 /* MessageView.swift */,
+				D311181224324DAA00F2A12E /* ArchiveListTableViewCell.swift */,
+				D3E7592225DE2CFA00B898CE /* SettingsCollectionHeaderView.swift */,
+				D3E7593725DE372B00B898CE /* BorderView.swift */,
+				D37F0F9526010D8900AD91A7 /* ToiletTabLayoutItem.swift */,
+				D3B47D352605A2460065797A /* EmptyStateView.swift */,
+				D31D7703265EF57A005B44AE /* SettingCollectionSignInWithAppleCell.swift */,
+				D3A63518269DA203003D1BB3 /* EditReviewView.swift */,
+				D3E30CF1269FF4E5008A3A80 /* SettingCollectionSignOutCell.swift */,
+				D3705A0126CA7B920015A247 /* ToiletDiaryWeekEventView.swift */,
+				D3AC5CAA26F5DF8000424BBA /* BarButtonItem.swift */,
+				D3D945412819BC1E00842081 /* ToiletDiaryListCollectionHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D31F049726CBC6DA001D1BA5 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				D31F049326CBC6BD001D1BA5 /* ToiletDiaryDayViewController.swift */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		D3283BCD26B97FEA0002AF5A /* ToiletDiary */ = {
+			isa = PBXGroup;
+			children = (
+				D3705A0C26CA96510015A247 /* View */,
+				D3705A0326CA80880015A247 /* Edit */,
+				D3283BD526B98A340002AF5A /* Create */,
+				D3283BD426B98A2A0002AF5A /* List */,
+			);
+			path = ToiletDiary;
+			sourceTree = "<group>";
+		};
+		D3283BD426B98A2A0002AF5A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D31F049726CBC6DA001D1BA5 /* Day */,
+				D3283BD026B989D40002AF5A /* ToiletDiaryListViewController.swift */,
+				D3283BD226B989F00002AF5A /* ToiletDiaryListViewModel.swift */,
+				D31F049826CBC7EB001D1BA5 /* ToiletDiaryListPageViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D3283BD526B98A340002AF5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				D3283BD626B98A5F0002AF5A /* CreateToiletDiaryViewController.swift */,
+				D3283BD826B98A780002AF5A /* CreateToiletDiaryViewModel.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		D32B2204256F967000AA5CE8 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				D330CFF523BD198900F9F33D /* FirestoreCollcetionName.swift */,
+				D35D2F0523D7495E008E89E0 /* LocalStorageClient.swift */,
+				D3E7592D25DE330200B898CE /* UserDefaults.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		D330CFF223BD0F9800F9F33D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0D78CE3160E7CA671BAFA9D0 /* AppDelegate.swift */,
+				D330CFF323BD0FAB00F9F33D /* AlertMessage.swift */,
+				D39703F223C4719700F4CA33 /* LocationShared.swift */,
+				D3748E93256FAB6B000622A4 /* AppColor.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D349A62F25FCE75E004F8C3F /* ToiletTab */ = {
+			isa = PBXGroup;
+			children = (
+				D3092C00265E29BA008F5A0B /* Focus */,
+				D349A63825FCE85F004F8C3F /* Children */,
+				D349A62A25FCE729004F8C3F /* ToiletTabViewController.swift */,
+				D349A63025FCE76F004F8C3F /* ToiletTabPageViewController.swift */,
+			);
+			path = ToiletTab;
+			sourceTree = "<group>";
+		};
+		D349A63825FCE85F004F8C3F /* Children */ = {
+			isa = PBXGroup;
+			children = (
+				D3092C02265E29D4008F5A0B /* CreateList */,
+				D3092C01265E29CD008F5A0B /* ReviewList */,
+				D3092C03265E29DC008F5A0B /* ArchiveList */,
+			);
+			path = Children;
+			sourceTree = "<group>";
+		};
+		D355E5B3260266FA002336AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3352FAD23C495FD00949BD2 /* ReviewScore.swift */,
+				D355E5B426026708002336AA /* ToiletFragment.swift */,
+				D355E5B92602673C002336AA /* MeFragment.swift */,
+				D355E5BE260268F0002336AA /* ReviewFragment.swift */,
+				D355E5CF26026A16002336AA /* RecentlyViewedToiletFragment.swift */,
+				D3F996AC2603151600195BB4 /* UserFragment.swift */,
+				D3B28DBF2604645F009E1556 /* ArchivedToiletFragment.swift */,
+				D3FBB5B9262B04A800119417 /* HomeToiletFragment.swift */,
+				D3050A0126B5933D00186AD1 /* ToiletDiaryFragment.swift */,
+				D31F049A26CBC969001D1BA5 /* ToiletDiaryDayResultFragment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D355E5D426026AC3002336AA /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D3B28DA026037B0F009E1556 /* ToiletUseCase.swift */,
+				D3B28DA526039A39009E1556 /* LocationUseCase.swift */,
+				D3B28DB02603BCB2009E1556 /* ReviewUseCase.swift */,
+				D3B28DB52603BF34009E1556 /* ArchivedToiletUseCase.swift */,
+				D3B28DBA260441C8009E1556 /* AuthUseCase.swift */,
+				D3B28DC426047F1F009E1556 /* MapItemUseCase.swift */,
+				D3FBF789260522860077CAF0 /* UserUseCase.swift */,
+				D3953D9C265ABE42007C461D /* HomeToiletUsecase.swift */,
+				D3B3E80C26B80D0900CD85CB /* ToiletDiaryUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		D355E5D526026C8F002336AA /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				D355E5D626026CA4002336AA /* Mapper.swift */,
+				D356B39726B59B01005F077D /* ToiletDiaryMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		D35DB9D723E045380046E343 /* ToiletMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA9EE026AC20F400E1E545 /* Targets */,
+				D35DB9DA23E045380046E343 /* Info.plist */,
+				D35DB9D823E045380046E343 /* ToiletMapTests.swift */,
+				D31D7A5423E05FAA00C70DCC /* ToiletMapViewModelTests.swift */,
+				D31D7A5923E068E200C70DCC /* CLLocationManagerTests.swift */,
+			);
+			path = ToiletMapTests;
+			sourceTree = "<group>";
+		};
+		D35DB9E623E045450046E343 /* ToiletMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D386130A23E873F8009BBEBC /* SnapshotHelper.swift */,
+				D35DB9E723E045450046E343 /* ToiletMapUITests.swift */,
+				D35DB9E923E045450046E343 /* Info.plist */,
+			);
+			path = ToiletMapUITests;
+			sourceTree = "<group>";
+		};
+		D36EC8F126AE88A90072C436 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D36EC8F226AE88B90072C436 /* OnboardingViewController.swift */,
+				D36EC8F426AE89020072C436 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D36FBA1226A8060B0011BCB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3705A0326CA80880015A247 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				D3705A0426CA80990015A247 /* EditToiletDiaryViewModel.swift */,
+				D3705A0826CA869A0015A247 /* EditToiletDiaryViewController.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		D3705A0C26CA96510015A247 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3705A0A26CA96270015A247 /* ToiletDiaryEditView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D3724D3323BCD7E500F7D268 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D385638A27FB54D600048372 /* GoogleService-Info-Develop.plist */,
+				D3CFEE9623C2BC95000DBE95 /* GoogleService-Info-Release.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D38337E125A8A45B003EA365 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA9EE126AC20FD00E1E545 /* Stubs */,
+				D376D59925CDC1BD0042E1D9 /* AuthRepository.swift */,
+				D376D1C325CDC0F30042E1D9 /* UserRepository.swift */,
+				D38337E225A8A469003EA365 /* ToiletRepository.swift */,
+				D31426F925D28AA300C1EC07 /* MapItemRepository.swift */,
+				D34799EF25D31EE600A9D74A /* ReviewRepository.swift */,
+				D30509FF26B5753300186AD1 /* ToiletDiaryRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D39DD25B235EA4AB00529C1D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D308CBDF27FF40860073F11E /* DIContainer */,
+				D330CFF223BD0F9800F9F33D /* Common */,
+				3A21CD8C37D6D032AD3F4BD2 /* Component */,
+				D3FC500F2364014700E39AC7 /* Entity */,
+				A27B3A146626F8E042C97994 /* Extensions */,
+				D355E5D526026C8F002336AA /* Mapper */,
+				D355E5B3260266FA002336AA /* Model */,
+				D38337E125A8A45B003EA365 /* Repositories */,
+				D3FC50102364015600E39AC7 /* Services */,
+				D3EAF618262EEFE80004286F /* SwiftUI */,
+				D355E5D426026AC3002336AA /* UseCase */,
+				D311181624324DB900F2A12E /* View */,
+				B422E38A462E6E5C2BE3DE2D /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D39DD25C235EA4B000529C1D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D3724D3323BCD7E500F7D268 /* Config */,
+				2B8C7CF0F3D514E9413DE0E4 /* Info.plist */,
+				24B770B9FEB30CD616CB811C /* LaunchScreen.storyboard */,
+				C4BF41D937D6E3A8D7816E36 /* Assets.xcassets */,
+				D39FCBBF2363D162002BB2FF /* Xib */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D39FCBBF2363D162002BB2FF /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				D311181124324D8F00F2A12E /* View */,
+				D39FCBC12363D1E3002BB2FF /* ViewController */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		D39FCBC12363D1E3002BB2FF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3EA7FBE242F613700A7F486 /* ArchiveListViewController.xib */,
+				D3DEE0E9265DDF7800EF4006 /* CreateHomeToiletViewController.xib */,
+				D3AB304426BBA6F0002C0D07 /* CreateToiletDiaryViewController.xib */,
+				D349A63A25FCE8FA004F8C3F /* CreateToiletListViewController.xib */,
+				D397387E236445B100F72AFE /* CreateToiletViewController.xib */,
+				D3705A0626CA864C0015A247 /* EditToiletDiaryViewController.xib */,
+				D3A63516269DA162003D1BB3 /* FocusReviewToiletViewController.xib */,
+				D3F9A8222602608C00D282FB /* FocusToiletViewController.xib */,
+				D3092C0C265E2D55008F5A0B /* HomeToiletDetailViewController.xib */,
+				D33EB4A0242E2A09001078D2 /* HomeViewController.xib */,
+				D36EC8EF26AE873B0072C436 /* OnboardingViewController.xib */,
+				D3EC48D42601A1FB001D4A0C /* ReviewToiletListViewController.xib */,
+				D3CFEE9823C2C9B6000DBE95 /* ReviewViewController.xib */,
+				D34E61CB23C4B7FF00AC0738 /* SearchViewController.xib */,
+				D356A4C625DD675600C88F09 /* SettingsViewController.xib */,
+				D322D48023C1C5F400BB314B /* TermsOfServiceViewController.xib */,
+				D39D3D9923BEF7D50042FA17 /* ToiletDetailViewController.xib */,
+				D3D6235526C3D47B00500A5F /* ToiletDiaryListViewController.xib */,
+				D39FCBBC2363D017002BB2FF /* ToiletMapViewController.xib */,
+				D31F049426CBC6BD001D1BA5 /* ToiletDiaryDayViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D3D72FFA2673CC59000FAA44 /* NewToiletDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D3D72FFB2673CE89000FAA44 /* ToiletDetailFloatingPanel.swift */,
+			);
+			path = NewToiletDetail;
+			sourceTree = "<group>";
+		};
+		D3EAF618262EEFE80004286F /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				D3EAF619262EEFFF0004286F /* ToiletCardView.swift */,
+				D3EAF61E262EF0130004286F /* ToiletCardViewController.swift */,
+				D3FDF02A262EF08E0039BCF3 /* ToiletCardViewModel.swift */,
+				D357B4E926A7D391000F7AC9 /* ReviewGraphicalView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		D3FA9EE026AC20F400E1E545 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA9EE226AC210800E1E545 /* Usecase */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		D3FA9EE126AC20FD00E1E545 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA9EE426AC23A900E1E545 /* ToiletRepositoryStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		D3FA9EE226AC210800E1E545 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		D3FAE92927F9D85600AAAF8A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D3FAE92A27F9D85600AAAF8A /* RxCoreLocation */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		D3FC500F2364014700E39AC7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D30509FB26B5490500186AD1 /* Realm */,
+				D30509FC26B5491600186AD1 /* Firestore */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D3FC50102364015600E39AC7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D32B2204256F967000AA5CE8 /* DB */,
+				D35EC7BC25DF894600B28305 /* ToiletRefGenerator.swift */,
+				D36FBA1526A817A50011BCB4 /* LocalNotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E86AE80631A0EC9149A6CFE /* ToiletMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF3334A7B228045A57C4595 /* Build configuration list for PBXNativeTarget "ToiletMap" */;
+			buildPhases = (
+				8E7FE32893B7772B084BA662 /* Sources */,
+				D331752A26B4F0DC00DE751E /* LicensePlist */,
+				4DED9585FD89225DDDD2CC77 /* Resources */,
+				EE41FFAE66F54658A5DCF061 /* Frameworks */,
+				D3D730032673D2B7000FAA44 /* Update App Version on Settings.bundle */,
+				D34FAE1A23E489D0000A9D36 /* GoogleServices-Info */,
+				D3EA7FC6242F68B700A7F486 /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToiletMap;
+			packageProductDependencies = (
+				D3FAE8F027F8A4CA00AAAF8A /* SFSafeSymbols */,
+				D3FAE8F227F8A4CA00AAAF8A /* SnapKit */,
+				D3FAE8F427F8A4CA00AAAF8A /* SwiftyUserDefaults */,
+				D3FAE8F627F8A4CA00AAAF8A /* RxMKMapView */,
+				D3FAE8F827F8A4CA00AAAF8A /* StubKit */,
+				D3FAE8FA27F8A4CA00AAAF8A /* Floaty */,
+				D3FAE8FC27F8A4CA00AAAF8A /* Aiolos */,
+				D3FAE90127F8A5E900AAAF8A /* RealmSwift */,
+				D3FAE90527F8A60100AAAF8A /* FirebaseAuth */,
+				D3FAE90E27F8A69600AAAF8A /* Realm */,
+				D3FAE91127F8A6D700AAAF8A /* RxCocoa */,
+				D3FAE91327F8A6D700AAAF8A /* RxRelay */,
+				D3FAE91527F8A6D700AAAF8A /* RxSwift */,
+				D3FAE91727F9165F00AAAF8A /* EasyFirebaseSwiftAuth */,
+				D3FAE91927F9165F00AAAF8A /* EasyFirebaseSwiftFirestore */,
+				D3FAE91B27F9169500AAAF8A /* FirebaseFirestore */,
+				D3FAE91D27F9169500AAAF8A /* FirebaseFirestoreSwift-Beta */,
+				D3FAE92127F917C700AAAF8A /* FirebaseAnalytics */,
+				D3FAE92327F9182B00AAAF8A /* FirebaseCrashlytics */,
+				D3FAE92527F91EA000AAAF8A /* RxRealm */,
+				D3FAE92B27F9D86D00AAAF8A /* RxCoreLocation */,
+				D3FAE92D27F9D96900AAAF8A /* SwiftUICharts */,
+				D3D7AD0427FA050100EC51BC /* RxCombine */,
+				D34C0A5427FA1D94005B1500 /* AlgoliaSearchClient */,
+				D308CBE227FF41DC0073F11E /* Swinject */,
+				D3A759A52824FB2C007A2DF6 /* NVActivityIndicatorView */,
+				D3A759A928252668007A2DF6 /* NVActivityIndicatorViewExtended */,
+			);
+			productName = ToiletMap;
+			productReference = 933D2E4B22786DA64993FD75 /* ToiletMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D35DB9D523E045380046E343 /* ToiletMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35DB9DD23E045380046E343 /* Build configuration list for PBXNativeTarget "ToiletMapTests" */;
+			buildPhases = (
+				D35DB9D223E045380046E343 /* Sources */,
+				D35DB9D323E045380046E343 /* Frameworks */,
+				D35DB9D423E045380046E343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D35DB9DC23E045380046E343 /* PBXTargetDependency */,
+			);
+			name = ToiletMapTests;
+			packageProductDependencies = (
+			);
+			productName = ToiletMapTests;
+			productReference = D35DB9D623E045380046E343 /* ToiletMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D35DB9E423E045450046E343 /* ToiletMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35DB9EC23E045460046E343 /* Build configuration list for PBXNativeTarget "ToiletMapUITests" */;
+			buildPhases = (
+				D35DB9E123E045450046E343 /* Sources */,
+				D35DB9E223E045450046E343 /* Frameworks */,
+				D35DB9E323E045450046E343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D35DB9EB23E045450046E343 /* PBXTargetDependency */,
+			);
+			name = ToiletMapUITests;
+			productName = ToiletMapUITests;
+			productReference = D35DB9E523E045450046E343 /* ToiletMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86F7AED5BAA9A34C437BD724 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					D35DB9D523E045380046E343 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9E86AE80631A0EC9149A6CFE;
+					};
+					D35DB9E423E045450046E343 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9E86AE80631A0EC9149A6CFE;
+					};
+				};
+			};
+			buildConfigurationList = 535B9951833023ED27640E23 /* Build configuration list for PBXProject "ToiletMap" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 91BF08B1803260DD723FDC65;
+			packageReferences = (
+				D368F57725CA74DD00A61EC9 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+				D3B544EA25D193260062A8F8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D3E7592725DE32E400B898CE /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
+				D39D3BD8265DC41F0047C533 /* XCRemoteSwiftPackageReference "RxMKMapView" */,
+				D33CA5D326A53E86005D33C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D357B4EB26A7E68C000F7AC9 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				D3FA9EE626AC2CD200E1E545 /* XCRemoteSwiftPackageReference "StubKit" */,
+				D3D660BC26ADAD3200A4752B /* XCRemoteSwiftPackageReference "Floaty" */,
+				D3B3E80926B804B100CD85CB /* XCRemoteSwiftPackageReference "RxRealm" */,
+				D3461FB526C23AFE009B43E9 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				D36B081C26CAC6640004CA30 /* XCRemoteSwiftPackageReference "Aiolos" */,
+				D3FAE8FE27F8A5E900AAAF8A /* XCRemoteSwiftPackageReference "realm-swift" */,
+				D3FAE90B27F8A65100AAAF8A /* XCRemoteSwiftPackageReference "EasyFirebaseSwift" */,
+				D3FAE91027F8A6D700AAAF8A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D3D7AD0327FA050100EC51BC /* XCRemoteSwiftPackageReference "RxCombine" */,
+				D34C0A5327FA1D94005B1500 /* XCRemoteSwiftPackageReference "algoliasearch-client-swift" */,
+				D308CBDE27FF3F9A0073F11E /* XCRemoteSwiftPackageReference "Swinject" */,
+				D3A759A42824FB2C007A2DF6 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
+			productRefGroup = 1A40F81B2C90077892D4D883 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E86AE80631A0EC9149A6CFE /* ToiletMap */,
+				D35DB9D523E045380046E343 /* ToiletMapTests */,
+				D35DB9E423E045450046E343 /* ToiletMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DED9585FD89225DDDD2CC77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3705A0026CA7B700015A247 /* ToiletDiaryWeekEventView.xib in Resources */,
+				D311181524324DAA00F2A12E /* ArchiveListTableViewCell.xib in Resources */,
+				C39B3A12DDE8C701A7ED6210 /* Assets.xcassets in Resources */,
+				D3F9A8242602608C00D282FB /* FocusToiletViewController.xib in Resources */,
+				D34E61CC23C4B7FF00AC0738 /* SearchViewController.xib in Resources */,
+				D3DEE0EA265DDF7800EF4006 /* CreateHomeToiletViewController.xib in Resources */,
+				D394DAED25B1D3980070BBB5 /* MessageView.xib in Resources */,
+				D322D48223C1C5F400BB314B /* TermsOfServiceViewController.xib in Resources */,
+				F26AB78743F9A7A9A9B4FDCF /* LaunchScreen.storyboard in Resources */,
+				D39FCBBE2363D017002BB2FF /* ToiletMapViewController.xib in Resources */,
+				D349A63C25FCE8FA004F8C3F /* CreateToiletListViewController.xib in Resources */,
+				D3705A1026CA973C0015A247 /* EditToiletDiaryView.xib in Resources */,
+				D3705A0726CA864C0015A247 /* EditToiletDiaryViewController.xib in Resources */,
+				D3CFEE9723C2BC95000DBE95 /* GoogleService-Info-Release.plist in Resources */,
+				D38F2E1B26BFC5E7007D0604 /* ToiletMapView.xib in Resources */,
+				D3EC48D52601A1FB001D4A0C /* ReviewToiletListViewController.xib in Resources */,
+				D31F049626CBC6BD001D1BA5 /* ToiletDiaryDayViewController.xib in Resources */,
+				D351F2AC2706110D002249EF /* ToiletDiaryDetailView.xib in Resources */,
+				D3D6235626C3D47B00500A5F /* ToiletDiaryListViewController.xib in Resources */,
+				D39D3D9A23BEF7D50042FA17 /* ToiletDetailViewController.xib in Resources */,
+				D3EA7FC0242F613700A7F486 /* ArchiveListViewController.xib in Resources */,
+				D3973880236445B100F72AFE /* CreateToiletViewController.xib in Resources */,
+				D356A4C725DD675600C88F09 /* SettingsViewController.xib in Resources */,
+				D3A63517269DA162003D1BB3 /* FocusReviewToiletViewController.xib in Resources */,
+				D33EB4A2242E2A09001078D2 /* HomeViewController.xib in Resources */,
+				D351F2AE270611C0002249EF /* ToiletCardView.xib in Resources */,
+				D385638B27FB54D600048372 /* GoogleService-Info-Develop.plist in Resources */,
+				D3CFEE9923C2C9B6000DBE95 /* ReviewViewController.xib in Resources */,
+				D3D72FFE2673CF83000FAA44 /* Settings.bundle in Resources */,
+				D36EC8F026AE873B0072C436 /* OnboardingViewController.xib in Resources */,
+				D3AB304526BBA6F0002C0D07 /* CreateToiletDiaryViewController.xib in Resources */,
+				D3A6351B269DA231003D1BB3 /* EditReviewView.xib in Resources */,
+				D3092C0D265E2D55008F5A0B /* HomeToiletDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35DB9D423E045380046E343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35DB9E323E045450046E343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D331752A26B4F0DC00DE751E /* LicensePlist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = LicensePlist;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [ $CONFIGURATION = \"Develop\" ]; then\nif [ ! -e mint ]; then\nbrew install mint\nfi\nxcrun --sdk macosx mint run mono0926/LicensePlist license-plist --mintfile-path ${SRCROOT}/Mintfile --output-path ${SRCROOT}/Settings.bundle --github-token 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\nfi\n";
+		};
+		D34FAE1A23E489D0000A9D36 /* GoogleServices-Info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "GoogleServices-Info";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Release\" ]\nthen\n    cp \"${PROJECT_DIR}/${PROJECT_NAME}/Resource/Config/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ \"${CONFIGRATION}\" == \"Staging\" ]\nthen\n    cp \"${PROJECT_DIR}/${PROJECT_NAME}/Resource/Config/GoogleService-Info-Staging.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse\n    cp \"${PROJECT_DIR}/${PROJECT_NAME}/Resource/Config/GoogleService-Info-Develop.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+		};
+		D3D730032673D2B7000FAA44 /* Update App Version on Settings.bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update App Version on Settings.bundle";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_VERSION=\"$MARKETING_VERSION\"\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:2:DefaultValue ${APP_VERSION}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist\"\n";
+		};
+		D3EA7FC6242F68B700A7F486 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"＄(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%Build/*}SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E7FE32893B7772B084BA662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B3E80D26B80D0900CD85CB /* ToiletDiaryUseCase.swift in Sources */,
+				D38337D925A863AB003EA365 /* ToiletDetailViewController.swift in Sources */,
+				D33B89C825D19EB300343B11 /* ReviewViewModel.swift in Sources */,
+				D3CD687223C051CA004E3A30 /* Bool+Reverse.swift in Sources */,
+				D3A43A5623C72FE8003BA28F /* ToiletMapAnnotationView.swift in Sources */,
+				D33A770423BF211900A244D7 /* UIView+getSpecificConstraints.swift in Sources */,
+				D31F049926CBC7EB001D1BA5 /* ToiletDiaryListPageViewController.swift in Sources */,
+				D349A64425FCE9E7004F8C3F /* CreateToiletListViewModel.swift in Sources */,
+				D3A63519269DA203003D1BB3 /* EditReviewView.swift in Sources */,
+				D37B245423C23C4000335B4A /* ReviewViewController.swift in Sources */,
+				D3FC500A2363DBCD00E39AC7 /* Shadow.swift in Sources */,
+				D31204B725E4EB1F00194079 /* IntrinsicContentStackView.swift in Sources */,
+				D311181424324DAA00F2A12E /* ArchiveListTableViewCell.swift in Sources */,
+				D3ABDB2925D881E0003F6B2F /* NavigationController.swift in Sources */,
+				D3CD222C23DC596D00535FE2 /* RadiusImageView.swift in Sources */,
+				D3DEE0E4265DD3FB00EF4006 /* CreateHomeToiletViewModel.swift in Sources */,
+				D39738762364256500F72AFE /* ToiletMapAnnotation.swift in Sources */,
+				D3283BD926B98A780002AF5A /* CreateToiletDiaryViewModel.swift in Sources */,
+				D3A63515269DA0A9003D1BB3 /* FocusReviewToiletViewController.swift in Sources */,
+				D3748E94256FAB6B000622A4 /* AppColor.swift in Sources */,
+				D3B28DB12603BCB2009E1556 /* ReviewUseCase.swift in Sources */,
+				D3EA7FCA242F861300A7F486 /* ArchiveListViewModel.swift in Sources */,
+				D3FDF02B262EF08E0039BCF3 /* ToiletCardViewModel.swift in Sources */,
+				D3E30CF2269FF4E5008A3A80 /* SettingCollectionSignOutCell.swift in Sources */,
+				D308CBE527FF49860073F11E /* RepositoryAssembly.swift in Sources */,
+				D3A43A5423C7205B003BA28F /* CLLocationCoordinate2D+Equatable.swift in Sources */,
+				D3B28DB62603BF34009E1556 /* ArchivedToiletUseCase.swift in Sources */,
+				D38337E325A8A469003EA365 /* ToiletRepository.swift in Sources */,
+				D330CFF623BD198900F9F33D /* FirestoreCollcetionName.swift in Sources */,
+				27E6880223A3447CACF98AC6 /* AppDelegate.swift in Sources */,
+				D36EC8F326AE88B90072C436 /* OnboardingViewController.swift in Sources */,
+				D3E7593325DE33A200B898CE /* UIColor+Extensions.swift in Sources */,
+				D35EC7BD25DF894700B28305 /* ToiletRefGenerator.swift in Sources */,
+				D376D1C425CDC0F30042E1D9 /* UserRepository.swift in Sources */,
+				D3B3E80826B7EE3100CD85CB /* RealmInjector.swift in Sources */,
+				D3A759AC28252B8A007A2DF6 /* SearchToiletResultViewController.swift in Sources */,
+				D308CBE127FF40AA0073F11E /* FirebaseAssembly.swift in Sources */,
+				D3B28DA126037B0F009E1556 /* ToiletUseCase.swift in Sources */,
+				D349A62B25FCE729004F8C3F /* ToiletTabViewController.swift in Sources */,
+				D3352FAC23C4920900949BD2 /* BaseViewController.swift in Sources */,
+				D3705A0526CA80990015A247 /* EditToiletDiaryViewModel.swift in Sources */,
+				D330CFF423BD0FAB00F9F33D /* AlertMessage.swift in Sources */,
+				D38F2E1D26BFC881007D0604 /* MKMapView+Ex.swift in Sources */,
+				D347B7ED23BCB03F004F1D1A /* ToiletMapViewModel.swift in Sources */,
+				D367890823648B3D00A2A645 /* XibView.swift in Sources */,
+				D355E5BF260268F0002336AA /* ReviewFragment.swift in Sources */,
+				D394DAE825B1D3430070BBB5 /* MessageView.swift in Sources */,
+				D355E5D026026A16002336AA /* RecentlyViewedToiletFragment.swift in Sources */,
+				D33B89C225D19BC200343B11 /* CreateToiletViewModel.swift in Sources */,
+				D3FE9AE325F91CC300824149 /* TabBarController.swift in Sources */,
+				D3283BD726B98A5F0002AF5A /* CreateToiletDiaryViewController.swift in Sources */,
+				D3050A0026B5753300186AD1 /* ToiletDiaryRepository.swift in Sources */,
+				D33EB4A1242E2A09001078D2 /* HomeViewController.swift in Sources */,
+				D39703F323C4719700F4CA33 /* LocationShared.swift in Sources */,
+				D397387A23643C4500F72AFE /* UIImage+Ex.swift in Sources */,
+				BAD6B9EFBE1E9318144643DA /* ClassName+Extention.swift in Sources */,
+				D3CD222223DC42B000535FE2 /* BaseViewController+AppearBlurView.swift in Sources */,
+				D3352FA623C4789D00949BD2 /* SearchViewModel.swift in Sources */,
+				D3352FAE23C495FD00949BD2 /* ReviewScore.swift in Sources */,
+				D349A63125FCE76F004F8C3F /* ToiletTabPageViewController.swift in Sources */,
+				D3AB304726BBAC53002C0D07 /* ToiletMapView.swift in Sources */,
+				D30509FE26B54A8A00186AD1 /* LocalToiletDiary.swift in Sources */,
+				D3C83D8124076A5C00ACBDF5 /* User.swift in Sources */,
+				D355E5D726026CA4002336AA /* Mapper.swift in Sources */,
+				D355197923C6C78F00930D2C /* ShadowRadiusButton.swift in Sources */,
+				D35ECA2923C3740700C13F9F /* BaseViewModel.swift in Sources */,
+				D3B28DA626039A39009E1556 /* LocationUseCase.swift in Sources */,
+				D3283BD326B989F00002AF5A /* ToiletDiaryListViewModel.swift in Sources */,
+				D35ECA2723C373E800C13F9F /* ToiletDetailViewModel.swift in Sources */,
+				D3283BD126B989D40002AF5A /* ToiletDiaryListViewController.swift in Sources */,
+				D3EAF61A262EEFFF0004286F /* ToiletCardView.swift in Sources */,
+				D37F0F9B2601150900AD91A7 /* ReviewToiletListViewController.swift in Sources */,
+				D3AC5CAB26F5DF8000424BBA /* BarButtonItem.swift in Sources */,
+				D357B4EA26A7D391000F7AC9 /* ReviewGraphicalView.swift in Sources */,
+				D376D59A25CDC1BD0042E1D9 /* AuthRepository.swift in Sources */,
+				D3F8CB9523BE7B7900A5FF5F /* UISearchBar+SearchTokenModel.swift in Sources */,
+				D3B28DC02604645F009E1556 /* ArchivedToiletFragment.swift in Sources */,
+				D3352FA223C4750C00949BD2 /* CLLocationCoordinate2D+Distance.swift in Sources */,
+				D3FCBD9626159082006D4313 /* PrivateToilet.swift in Sources */,
+				D37F0F9626010D8900AD91A7 /* ToiletTabLayoutItem.swift in Sources */,
+				D3FBB5B5262B036500119417 /* HomeToilet.swift in Sources */,
+				D397387F236445B100F72AFE /* CreateToiletViewController.swift in Sources */,
+				D36EC8EC26AE46B30072C436 /* ShadowFloatyItem.swift in Sources */,
+				D38337DA25A863AB003EA365 /* ToiletMapViewController.swift in Sources */,
+				D3A6351D269DAAB8003D1BB3 /* FocusReviewToiletViewModel.swift in Sources */,
+				D355197723C6C62F00930D2C /* RadiusButton.swift in Sources */,
+				D356B39826B59B01005F077D /* ToiletDiaryMapper.swift in Sources */,
+				D3EADB972801719400A8B180 /* DividerView.swift in Sources */,
+				D31F049526CBC6BD001D1BA5 /* ToiletDiaryDayViewController.swift in Sources */,
+				D3B28D9C26037A28009E1556 /* FocusToiletViewModel.swift in Sources */,
+				D3B28DC526047F1F009E1556 /* MapItemUseCase.swift in Sources */,
+				D31D7704265EF57A005B44AE /* SettingCollectionSignInWithAppleCell.swift in Sources */,
+				D330CFF823BD42EB00F9F33D /* Array+isNotEmpty.swift in Sources */,
+				D3DB317B26024D170072353D /* RecentlyToilet.swift in Sources */,
+				D34799F025D31EE600A9D74A /* ReviewRepository.swift in Sources */,
+				D31F049B26CBC969001D1BA5 /* ToiletDiaryDayResultFragment.swift in Sources */,
+				D3FA5F302572E8B40098F94A /* UIImage+Text.swift in Sources */,
+				D3EA7FBF242F613700A7F486 /* ArchiveListViewController.swift in Sources */,
+				D3705A0B26CA96270015A247 /* ToiletDiaryEditView.swift in Sources */,
+				D35ECA2523C3656300C13F9F /* Array+doesNotContain.swift in Sources */,
+				D3EADB9528016CC400A8B180 /* SearchResultCell.swift in Sources */,
+				D322D48123C1C5F400BB314B /* TermsOfServiceViewController.swift in Sources */,
+				D36EC8EE26AE49CF0072C436 /* ColoredSwitch.swift in Sources */,
+				D3D72FFC2673CE89000FAA44 /* ToiletDetailFloatingPanel.swift in Sources */,
+				D356A4B925DD661200C88F09 /* SettingsViewController.swift in Sources */,
+				D3CFEE9B23C2D1F7000DBE95 /* Review.swift in Sources */,
+				D3705A0226CA7B920015A247 /* ToiletDiaryWeekEventView.swift in Sources */,
+				D31426FA25D28AA300C1EC07 /* MapItemRepository.swift in Sources */,
+				D3050A0226B5933D00186AD1 /* ToiletDiaryFragment.swift in Sources */,
+				D3E7592325DE2CFA00B898CE /* SettingsCollectionHeaderView.swift in Sources */,
+				D3D61FF523BAC35E00E7BDE5 /* UIViewController+AlertView.swift in Sources */,
+				D3FBF78A260522860077CAF0 /* UserUseCase.swift in Sources */,
+				D3E7592E25DE330200B898CE /* UserDefaults.swift in Sources */,
+				D3092C09265E2AEE008F5A0B /* HomeToiletDetailViewModel.swift in Sources */,
+				D3B2225A23645CA900A49868 /* String+isNotEmpty.swift in Sources */,
+				D3DEE0E2265DD3BD00EF4006 /* CreateHomeToiletViewController.swift in Sources */,
+				D3FBB5BA262B04A800119417 /* HomeToiletFragment.swift in Sources */,
+				D37F0FA02601156000AD91A7 /* ReviewToiletListViewModel.swift in Sources */,
+				D36FBA1626A817A50011BCB4 /* LocalNotificationService.swift in Sources */,
+				D3E7593825DE372B00B898CE /* BorderView.swift in Sources */,
+				D35D2F0623D7495E008E89E0 /* LocalStorageClient.swift in Sources */,
+				D3B28DBB260441C8009E1556 /* AuthUseCase.swift in Sources */,
+				D3748EA8256FE0DC000622A4 /* UIViewController+HandleAlertMessage.swift in Sources */,
+				D349A63B25FCE8FA004F8C3F /* CreateToiletListViewController.swift in Sources */,
+				D33F440023BB839A00C8C30F /* ToiletPolylineRenderer.swift in Sources */,
+				D3EAF61F262EF0130004286F /* ToiletCardViewController.swift in Sources */,
+				D3746B17281541ED002497E8 /* ToiletDiary.swift in Sources */,
+				D3A08A9B28282756003CFAEE /* SearchToiletResultCollectionHeaderView.swift in Sources */,
+				D36EC8F526AE89020072C436 /* OnboardingViewModel.swift in Sources */,
+				D355E5B526026708002336AA /* ToiletFragment.swift in Sources */,
+				D3F996AD2603151600195BB4 /* UserFragment.swift in Sources */,
+				D3D945422819BC1E00842081 /* ToiletDiaryListCollectionHeaderView.swift in Sources */,
+				D3705A0926CA869A0015A247 /* EditToiletDiaryViewController.swift in Sources */,
+				D3F9A8232602608C00D282FB /* FocusToiletViewController.swift in Sources */,
+				D3B47D362605A2460065797A /* EmptyStateView.swift in Sources */,
+				D3FC500C2363DC2400E39AC7 /* ShadowButton.swift in Sources */,
+				D3092C0B265E2C10008F5A0B /* HomeToiletDetailViewController.swift in Sources */,
+				4DD2D5549027B74850B8EC23 /* Toilet.swift in Sources */,
+				D3E2DDB625DD697E000597A3 /* SettingsViewModel.swift in Sources */,
+				D355E5BA2602673C002336AA /* MeFragment.swift in Sources */,
+				D3DEE0E6265DDB4D00EF4006 /* CustomUserTrackingButton.swift in Sources */,
+				D31204BC25E4ECE200194079 /* PlaceholderTextView.swift in Sources */,
+				D3953D9D265ABE42007C461D /* HomeToiletUsecase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35DB9D223E045380046E343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3FA9EE526AC23A900E1E545 /* ToiletRepositoryStub.swift in Sources */,
+				D31D7A5523E05FAA00C70DCC /* ToiletMapViewModelTests.swift in Sources */,
+				D35DB9D923E045380046E343 /* ToiletMapTests.swift in Sources */,
+				D31D7A5A23E068E200C70DCC /* CLLocationManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35DB9E123E045450046E343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35DB9E823E045450046E343 /* ToiletMapUITests.swift in Sources */,
+				D386130B23E873F8009BBEBC /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D35DB9DC23E045380046E343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E86AE80631A0EC9149A6CFE /* ToiletMap */;
+			targetProxy = D35DB9DB23E045380046E343 /* PBXContainerItemProxy */;
+		};
+		D35DB9EB23E045450046E343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E86AE80631A0EC9149A6CFE /* ToiletMap */;
+			targetProxy = D35DB9EA23E045450046E343 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		532E8A877E45C1E895AD7F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_SUFFIX_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ToiletMap/ToiletMapRelease.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = S8WBNKMKYU;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ToiletMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.12.6;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fumiya.NewToiletCritic${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = ToiletMap;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBB27366D1C2505635D24DAC /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_SUFFIX_NAME = Develop;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_ID_SUFFIX = .dev;
+				CODE_SIGN_ENTITLEMENTS = ToiletMap/ToiletMapDevelop.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S8WBNKMKYU;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ToiletMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.12.6;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fumiya.NewToiletCritic${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = ToiletMap;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Develop;
+		};
+		D06B03359769EC4CEFA2F506 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = .develop;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEVELOP=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D DEVELOP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Develop;
+		};
+		D35DB9DE23E045380046E343 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ToiletMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumiya.NewToiletCritic.ToiletMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToiletMap.app/ToiletMap";
+			};
+			name = Develop;
+		};
+		D35DB9DF23E045380046E343 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
+				INFOPLIST_FILE = ToiletMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumiya.NewToiletCritic.ToiletMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToiletMap.app/ToiletMap";
+			};
+			name = Staging;
+		};
+		D35DB9E023E045380046E343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
+				INFOPLIST_FILE = ToiletMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumiya.NewToiletCritic.ToiletMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToiletMap.app/ToiletMap";
+			};
+			name = Release;
+		};
+		D35DB9ED23E045460046E343 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ToiletMapUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumiya.NewToiletCritic.ToiletMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToiletMap;
+			};
+			name = Develop;
+		};
+		D35DB9EE23E045460046E343 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
+				INFOPLIST_FILE = ToiletMapUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumiya.NewToiletCritic.ToiletMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToiletMap;
+			};
+			name = Staging;
+		};
+		D35DB9EF23E045460046E343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
+				INFOPLIST_FILE = ToiletMapUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumiya.NewToiletCritic.ToiletMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToiletMap;
+			};
+			name = Release;
+		};
+		D3724D3023BCD6CD00F7D268 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = .staging;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEVELOP=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D STAGING";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		D3724D3123BCD6CD00F7D268 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_SUFFIX_NAME = Staging;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_ID_SUFFIX = .stg;
+				CODE_SIGN_ENTITLEMENTS = ToiletMap/ToiletMap.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S8WBNKMKYU;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ToiletMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.12.6;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumiya.NewToiletCritic.stg;
+				PRODUCT_NAME = ToiletMap;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		DE9F32D821A99DC9BA80B359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = "";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		535B9951833023ED27640E23 /* Build configuration list for PBXProject "ToiletMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06B03359769EC4CEFA2F506 /* Develop */,
+				D3724D3023BCD6CD00F7D268 /* Staging */,
+				DE9F32D821A99DC9BA80B359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Develop;
+		};
+		D35DB9DD23E045380046E343 /* Build configuration list for PBXNativeTarget "ToiletMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35DB9DE23E045380046E343 /* Develop */,
+				D35DB9DF23E045380046E343 /* Staging */,
+				D35DB9E023E045380046E343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Develop;
+		};
+		D35DB9EC23E045460046E343 /* Build configuration list for PBXNativeTarget "ToiletMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35DB9ED23E045460046E343 /* Develop */,
+				D35DB9EE23E045460046E343 /* Staging */,
+				D35DB9EF23E045460046E343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Develop;
+		};
+		DAF3334A7B228045A57C4595 /* Build configuration list for PBXNativeTarget "ToiletMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB27366D1C2505635D24DAC /* Develop */,
+				D3724D3123BCD6CD00F7D268 /* Staging */,
+				532E8A877E45C1E895AD7F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Develop;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D308CBDE27FF3F9A0073F11E /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.0;
+			};
+		};
+		D33CA5D326A53E86005D33C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D3461FB526C23AFE009B43E9 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.2;
+			};
+		};
+		D34C0A5327FA1D94005B1500 /* XCRemoteSwiftPackageReference "algoliasearch-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/algolia/algoliasearch-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		D357B4EB26A7E68C000F7AC9 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mecid/SwiftUICharts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.3;
+			};
+		};
+		D368F57725CA74DD00A61EC9 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/piknotech/SFSafeSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+		D36B081C26CAC6640004CA30 /* XCRemoteSwiftPackageReference "Aiolos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IdeasOnCanvas/Aiolos";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		D39D3BD8265DC41F0047C533 /* XCRemoteSwiftPackageReference "RxMKMapView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxMKMapView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		D3A759A42824FB2C007A2DF6 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		D3B3E80926B804B100CD85CB /* XCRemoteSwiftPackageReference "RxRealm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxRealm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		D3B544EA25D193260062A8F8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		D3D660BC26ADAD3200A4752B /* XCRemoteSwiftPackageReference "Floaty" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kciter/Floaty.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D3D7AD0327FA050100EC51BC /* XCRemoteSwiftPackageReference "RxCombine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/RxCombine";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		D3E7592725DE32E400B898CE /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sunshinejr/SwiftyUserDefaults";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		D3FA9EE626AC2CD200E1E545 /* XCRemoteSwiftPackageReference "StubKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kateinoigakukun/StubKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.7;
+			};
+		};
+		D3FAE8FE27F8A5E900AAAF8A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D3FAE90B27F8A65100AAAF8A /* XCRemoteSwiftPackageReference "EasyFirebaseSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fummicc1/EasyFirebaseSwift";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		D3FAE91027F8A6D700AAAF8A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D308CBE227FF41DC0073F11E /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D308CBDE27FF3F9A0073F11E /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		D34C0A5427FA1D94005B1500 /* AlgoliaSearchClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D34C0A5327FA1D94005B1500 /* XCRemoteSwiftPackageReference "algoliasearch-client-swift" */;
+			productName = AlgoliaSearchClient;
+		};
+		D3A759A52824FB2C007A2DF6 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3A759A42824FB2C007A2DF6 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		D3A759A928252668007A2DF6 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3A759A42824FB2C007A2DF6 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+		D3D7AD0427FA050100EC51BC /* RxCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3D7AD0327FA050100EC51BC /* XCRemoteSwiftPackageReference "RxCombine" */;
+			productName = RxCombine;
+		};
+		D3FAE8F027F8A4CA00AAAF8A /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D368F57725CA74DD00A61EC9 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+		D3FAE8F227F8A4CA00AAAF8A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3B544EA25D193260062A8F8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D3FAE8F427F8A4CA00AAAF8A /* SwiftyUserDefaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3E7592725DE32E400B898CE /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */;
+			productName = SwiftyUserDefaults;
+		};
+		D3FAE8F627F8A4CA00AAAF8A /* RxMKMapView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D39D3BD8265DC41F0047C533 /* XCRemoteSwiftPackageReference "RxMKMapView" */;
+			productName = RxMKMapView;
+		};
+		D3FAE8F827F8A4CA00AAAF8A /* StubKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3FA9EE626AC2CD200E1E545 /* XCRemoteSwiftPackageReference "StubKit" */;
+			productName = StubKit;
+		};
+		D3FAE8FA27F8A4CA00AAAF8A /* Floaty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3D660BC26ADAD3200A4752B /* XCRemoteSwiftPackageReference "Floaty" */;
+			productName = Floaty;
+		};
+		D3FAE8FC27F8A4CA00AAAF8A /* Aiolos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D36B081C26CAC6640004CA30 /* XCRemoteSwiftPackageReference "Aiolos" */;
+			productName = Aiolos;
+		};
+		D3FAE90127F8A5E900AAAF8A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3FAE8FE27F8A5E900AAAF8A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		D3FAE90527F8A60100AAAF8A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D33CA5D326A53E86005D33C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D3FAE90E27F8A69600AAAF8A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3FAE8FE27F8A5E900AAAF8A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		D3FAE91127F8A6D700AAAF8A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3FAE91027F8A6D700AAAF8A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D3FAE91327F8A6D700AAAF8A /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3FAE91027F8A6D700AAAF8A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		D3FAE91527F8A6D700AAAF8A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3FAE91027F8A6D700AAAF8A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		D3FAE91727F9165F00AAAF8A /* EasyFirebaseSwiftAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3FAE90B27F8A65100AAAF8A /* XCRemoteSwiftPackageReference "EasyFirebaseSwift" */;
+			productName = EasyFirebaseSwiftAuth;
+		};
+		D3FAE91927F9165F00AAAF8A /* EasyFirebaseSwiftFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3FAE90B27F8A65100AAAF8A /* XCRemoteSwiftPackageReference "EasyFirebaseSwift" */;
+			productName = EasyFirebaseSwiftFirestore;
+		};
+		D3FAE91B27F9169500AAAF8A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D33CA5D326A53E86005D33C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D3FAE91D27F9169500AAAF8A /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D33CA5D326A53E86005D33C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		D3FAE92127F917C700AAAF8A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D33CA5D326A53E86005D33C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D3FAE92327F9182B00AAAF8A /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D33CA5D326A53E86005D33C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		D3FAE92527F91EA000AAAF8A /* RxRealm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3B3E80926B804B100CD85CB /* XCRemoteSwiftPackageReference "RxRealm" */;
+			productName = RxRealm;
+		};
+		D3FAE92B27F9D86D00AAAF8A /* RxCoreLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxCoreLocation;
+		};
+		D3FAE92D27F9D96900AAAF8A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D357B4EB26A7E68C000F7AC9 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 86F7AED5BAA9A34C437BD724 /* Project object */;
+}

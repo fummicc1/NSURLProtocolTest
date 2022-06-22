@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="ToiletMap" customModuleProvider="target">
+            <connections>
+                <outlet property="accountStackView" destination="eT7-kl-8qb" id="fhe-9g-sPr"/>
+                <outlet property="checkTermsOfServiceButton" destination="cWB-X5-JFY" id="Nl9-bT-Hn1"/>
+                <outlet property="signInAsGuestButton" destination="5mQ-3Q-5y0" id="kQJ-5n-Ebw"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Xha-lj-2MQ"/>
+                <outlet property="webView" destination="PsF-rn-8yz" id="bfo-QZ-BN0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="eT7-kl-8qb">
+                    <rect key="frame" x="44" y="761" width="326" height="37"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mQ-3Q-5y0" customClass="ShadowRadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="37"/>
+                            <color key="backgroundColor" name="MainColor"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                            <state key="normal" title="登録なしで使ってみる">
+                                <color key="titleColor" name="BackgroundColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWB-X5-JFY" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                    <rect key="frame" x="91" y="690" width="232.5" height="23"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <state key="normal" title="サービス規約に同意する" image="checkmark.square" catalog="system">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                </button>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsF-rn-8yz">
+                    <rect key="frame" x="16" y="68" width="382" height="598"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PsF-rn-8yz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="6bX-pZ-bfl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PsF-rn-8yz" secondAttribute="trailing" constant="16" id="7fz-IK-TxH"/>
+                <constraint firstItem="cWB-X5-JFY" firstAttribute="top" secondItem="PsF-rn-8yz" secondAttribute="bottom" constant="24" id="GuY-TK-aMa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eT7-kl-8qb" secondAttribute="trailing" constant="44" id="OKE-Lt-7C0"/>
+                <constraint firstItem="cWB-X5-JFY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eLg-BK-70y"/>
+                <constraint firstItem="eT7-kl-8qb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="44" id="iLH-Gl-eDW"/>
+                <constraint firstItem="PsF-rn-8yz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ike-TJ-I1W"/>
+                <constraint firstItem="eT7-kl-8qb" firstAttribute="top" secondItem="cWB-X5-JFY" secondAttribute="bottom" constant="48" id="tqY-z5-QeA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eT7-kl-8qb" secondAttribute="bottom" constant="64" id="wZM-OO-x8a"/>
+            </constraints>
+            <point key="canvasLocation" x="27.536231884057973" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <namedColor name="BackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-Uc-Tss">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="7ZZ-Bz-MqD">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="305"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogh-zJ-a1h">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="94.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="eh8-1V-fIf">
+                                            <rect key="frame" x="24" y="16" width="366" height="54.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BL5-Kj-iph">
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="54.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8月5日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2e-1J-ft9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVL-SE-Ku9">
+                                                            <rect key="frame" x="0.0" y="24.5" width="366" height="30"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="SecondaryBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="eh8-1V-fIf" firstAttribute="top" secondItem="ogh-zJ-a1h" secondAttribute="top" constant="16" id="CX9-Py-ImP"/>
+                                        <constraint firstAttribute="trailing" secondItem="eh8-1V-fIf" secondAttribute="trailing" constant="24" id="XF2-eY-vJw"/>
+                                        <constraint firstAttribute="bottom" secondItem="eh8-1V-fIf" secondAttribute="bottom" constant="24" id="hIw-HF-gYc"/>
+                                        <constraint firstItem="eh8-1V-fIf" firstAttribute="leading" secondItem="ogh-zJ-a1h" secondAttribute="leading" constant="24" id="wAI-bs-V06"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GTP-je-99Q">
+                                    <rect key="frame" x="0.0" y="126.5" width="414" height="108.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Tp-Xg-Vws">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="108.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrb-qm-E5Q" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="0.0" width="96" height="88"/>
+                                                    <inset key="contentEdgeInsets" minX="8" minY="4" maxX="8" maxY="4"/>
+                                                    <state key="normal" image="pee"/>
+                                                    <state key="selected" image="pee_fill"/>
+                                                    <state key="highlighted" image="pee_fill"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="おしっこ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbg-l4-YEe">
+                                                    <rect key="frame" x="29.5" y="88" width="69.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AN7-j4-CIC">
+                                            <rect key="frame" x="143" y="0.0" width="128" height="108.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVf-I8-c3N" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="0.0" width="96" height="88"/>
+                                                    <inset key="contentEdgeInsets" minX="8" minY="4" maxX="8" maxY="4"/>
+                                                    <state key="normal" image="poop"/>
+                                                    <state key="selected" image="poop_fill"/>
+                                                    <state key="highlighted" image="poop_fill"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="うんち" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="509-rQ-bBb">
+                                                    <rect key="frame" x="38" y="88" width="52" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vj7-ud-KrE">
+                                            <rect key="frame" x="286" y="0.0" width="128" height="108.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOL-gv-rsg" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="0.0" width="96" height="88"/>
+                                                    <inset key="contentEdgeInsets" minX="8" minY="4" maxX="8" maxY="4"/>
+                                                    <state key="normal" image="pee_poop"/>
+                                                    <state key="selected" image="pee_poop_fill"/>
+                                                    <state key="highlighted" image="pee_poop_fill"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="両方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5u-u7-Fum">
+                                                    <rect key="frame" x="46.5" y="88" width="35" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vlQ-6h-LLs">
+                                    <rect key="frame" x="0.0" y="267" width="414" height="38"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u6G-kf-sRS" customClass="PlaceholderTextView" customModule="ToiletMap" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="38"/>
+                                            <color key="backgroundColor" name="SecondaryBackgroundColor"/>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="u6G-kf-sRS" firstAttribute="leading" secondItem="vlQ-6h-LLs" secondAttribute="leading" constant="16" id="7FI-9O-JVj"/>
+                                        <constraint firstAttribute="trailing" secondItem="u6G-kf-sRS" secondAttribute="trailing" constant="16" id="yfj-sM-OO3"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="knh-FL-C2g" firstAttribute="bottom" secondItem="7ZZ-Bz-MqD" secondAttribute="bottom" id="LU8-Ua-iYN"/>
+                        <constraint firstItem="7ZZ-Bz-MqD" firstAttribute="leading" secondItem="knh-FL-C2g" secondAttribute="leading" id="Vee-OT-elR"/>
+                        <constraint firstItem="7ZZ-Bz-MqD" firstAttribute="width" secondItem="QX6-OF-zTE" secondAttribute="width" id="eqj-kV-OdO"/>
+                        <constraint firstItem="knh-FL-C2g" firstAttribute="top" secondItem="7ZZ-Bz-MqD" secondAttribute="top" id="pRl-a4-mCY"/>
+                        <constraint firstItem="knh-FL-C2g" firstAttribute="trailing" secondItem="7ZZ-Bz-MqD" secondAttribute="trailing" id="wev-Bx-ale"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="knh-FL-C2g"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="QX6-OF-zTE"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PTH-Uc-Tss" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Aeh-Js-9Y5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PTH-Uc-Tss" secondAttribute="trailing" id="SaU-0e-y7D"/>
+                <constraint firstItem="PTH-Uc-Tss" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ssC-eF-yfk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PTH-Uc-Tss" secondAttribute="bottom" id="xzw-Xk-Jag"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pee" width="80" height="80"/>
+        <image name="pee_fill" width="80" height="80"/>
+        <image name="pee_poop" width="80" height="80"/>
+        <image name="pee_poop_fill" width="80" height="80"/>
+        <image name="poop" width="80" height="80"/>
+        <image name="poop_fill" width="80" height="80"/>
+        <namedColor name="SecondaryBackgroundColor">
+            <color red="0.96862745098039216" green="0.95294117647058818" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

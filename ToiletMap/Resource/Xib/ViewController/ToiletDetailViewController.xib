@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToiletDetailViewController" customModule="ToiletMap" customModuleProvider="target">
+            <connections>
+                <outlet property="actionStackView" destination="JSY-D5-ELT" id="PUS-yd-WC8"/>
+                <outlet property="archiveButton" destination="gIW-4y-Vbt" id="dv0-JI-uq4"/>
+                <outlet property="baseView" destination="gqi-hY-SVE" id="W2I-Ta-PhE"/>
+                <outlet property="dismissButton" destination="4G6-jW-3Ki" id="hNy-oy-oxm"/>
+                <outlet property="reviewButton" destination="OGG-ri-jvB" id="7jG-Eg-aYq"/>
+                <outlet property="reviewStackView" destination="Q1n-nO-Myg" id="wHd-MU-0xc"/>
+                <outlet property="showDirectionsButton" destination="SLp-u8-eph" id="K7R-sk-NxK"/>
+                <outlet property="stackView" destination="h9k-3Y-VL9" id="b3s-Ud-ln5"/>
+                <outlet property="subTitleView" destination="Yfy-ZG-ZjU" id="UVF-ho-imW"/>
+                <outlet property="titleLabel" destination="hHp-de-7AA" id="frU-nx-GVV"/>
+                <outlet property="topActionStackView" destination="7sM-4l-z6y" id="lIR-Wd-QFt"/>
+                <outlet property="writeDiaryButton" destination="JSC-0F-9Ua" id="aQ9-fp-NoF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="649"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqi-hY-SVE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="649"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7sM-4l-z6y">
+                            <rect key="frame" x="16" y="16" width="382" height="340"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Nug-J0-gEy">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="340"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="M9j-n3-j5t">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="39"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tJ9-Lf-e2k">
+                                                    <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G6-jW-3Ki" customClass="ShadowRadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
+                                                            <color key="backgroundColor" name="MainColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="4G6-jW-3Ki" secondAttribute="height" id="QB1-o2-2WM"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                            <color key="tintColor" name="BackgroundColor"/>
+                                                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                            <state key="normal" image="xmark" catalog="system">
+                                                                <color key="titleColor" name="MainColor"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="medium" weight="semibold">
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                </preferredSymbolConfiguration>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Tzy-OG-ErD">
+                                            <rect key="frame" x="50" y="0.0" width="332" height="33"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="E9p-jy-h0P">
+                                                    <rect key="frame" x="72" y="0.0" width="260" height="33"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSC-0F-9Ua" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="118" height="33"/>
+                                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="tintColor" name="MainColor"/>
+                                                            <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                                            <state key="normal" title="日記をつける">
+                                                                <color key="titleColor" name="MainColor"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGG-ri-jvB" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                                            <rect key="frame" x="142" y="0.0" width="118" height="33"/>
+                                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="tintColor" name="MainColor"/>
+                                                            <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                                            <state key="normal" title="レビューする">
+                                                                <color key="titleColor" name="MainColor"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h9k-3Y-VL9">
+                            <rect key="frame" x="8" y="372" width="398" height="253"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHp-de-7AA">
+                                    <rect key="frame" x="0.0" y="0.0" width="398" height="50"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yfy-ZG-ZjU">
+                                    <rect key="frame" x="0.0" y="58" width="398" height="50"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q1n-nO-Myg">
+                                    <rect key="frame" x="0.0" y="116" width="398" height="96"/>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JSY-D5-ELT">
+                                    <rect key="frame" x="0.0" y="220" width="398" height="33"/>
+                                    <subviews>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIW-4y-Vbt" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="227" height="33"/>
+                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="tintColor" name="MainColor"/>
+                                            <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                            <state key="normal" title="保存する" image="heart" catalog="system">
+                                                <color key="titleColor" name="MainColor"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                </preferredSymbolConfiguration>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLp-u8-eph" customClass="RadiusButton" customModule="ToiletMap" customModuleProvider="target">
+                                            <rect key="frame" x="231" y="0.0" width="167" height="33"/>
+                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="tintColor" name="MainColor"/>
+                                            <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                            <state key="normal" title="経路" image="arrow.turn.up.right" catalog="system">
+                                                <color key="titleColor" name="MainColor"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                </preferredSymbolConfiguration>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="h9k-3Y-VL9" firstAttribute="top" secondItem="7sM-4l-z6y" secondAttribute="bottom" constant="16" id="TW5-qv-vEt"/>
+                        <constraint firstItem="7sM-4l-z6y" firstAttribute="leading" secondItem="gqi-hY-SVE" secondAttribute="leading" constant="16" id="VR9-Qg-pcA"/>
+                        <constraint firstAttribute="bottom" secondItem="h9k-3Y-VL9" secondAttribute="bottom" constant="24" id="hQ3-vf-JM3"/>
+                        <constraint firstItem="7sM-4l-z6y" firstAttribute="top" secondItem="gqi-hY-SVE" secondAttribute="top" constant="16" id="k9t-JE-Ah8"/>
+                        <constraint firstItem="h9k-3Y-VL9" firstAttribute="leading" secondItem="gqi-hY-SVE" secondAttribute="leading" constant="8" id="pBy-B6-dH2"/>
+                        <constraint firstAttribute="trailing" secondItem="h9k-3Y-VL9" secondAttribute="trailing" constant="8" id="pOy-U0-dBX"/>
+                        <constraint firstAttribute="trailing" secondItem="7sM-4l-z6y" secondAttribute="trailing" constant="16" id="qZF-KD-RJa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="gqi-hY-SVE" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="I3N-6d-HfI"/>
+                <constraint firstItem="gqi-hY-SVE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ovz-iM-pPT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gqi-hY-SVE" secondAttribute="bottom" id="b00-E4-50a"/>
+                <constraint firstItem="gqi-hY-SVE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cfH-KD-iGn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.875" y="282.57042253521126"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.turn.up.right" catalog="system" width="128" height="99"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="BackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

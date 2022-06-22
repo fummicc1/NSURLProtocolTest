@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewViewController" customModule="ToiletMap" customModuleProvider="target">
+            <connections>
+                <outlet property="canUseSwitch" destination="ZKO-AX-C4o" id="YT2-4U-dcd"/>
+                <outlet property="hasAccessibleRestroomSwitch" destination="NPV-Va-avQ" id="ULj-0e-abL"/>
+                <outlet property="hasWashletSwitch" destination="a56-kE-oUo" id="Zyt-7p-4T4"/>
+                <outlet property="isFreeSwitch" destination="piE-fm-d34" id="boG-xZ-qrj"/>
+                <outlet property="view" destination="iN0-l3-epB" id="XCj-oN-Qpd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="238" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="dLQ-2t-idI">
+                    <rect key="frame" x="40" y="92" width="334" height="220"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NV1-me-5fN">
+                            <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="場所は正しかった" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJy-oK-6qk">
+                                    <rect key="frame" x="0.0" y="0.0" width="114.5" height="31"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZKO-AX-C4o" customClass="ColoredSwitch" customModule="ToiletMap" customModuleProvider="target">
+                                    <rect key="frame" x="285" y="0.0" width="51" height="31"/>
+                                </switch>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gOw-4O-wYQ">
+                            <rect key="frame" x="0.0" y="63" width="334" height="31"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="無料で使えた" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4q2-1R-4cd">
+                                    <rect key="frame" x="0.0" y="0.0" width="86" height="31"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="piE-fm-d34" customClass="ColoredSwitch" customModule="ToiletMap" customModuleProvider="target">
+                                    <rect key="frame" x="285" y="0.0" width="51" height="31"/>
+                                </switch>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A5x-Z8-eKZ">
+                            <rect key="frame" x="0.0" y="126" width="334" height="31"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ウォシュレットはあった" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5j-5T-7xj">
+                                    <rect key="frame" x="0.0" y="0.0" width="157.5" height="31"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a56-kE-oUo" customClass="ColoredSwitch" customModule="ToiletMap" customModuleProvider="target">
+                                    <rect key="frame" x="285" y="0.0" width="51" height="31"/>
+                                </switch>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s0v-4n-SuR">
+                            <rect key="frame" x="0.0" y="189" width="334" height="31"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="障害者用トイレがあった" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xf2-pN-ypy">
+                                    <rect key="frame" x="0.0" y="0.0" width="157.5" height="31"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NPV-Va-avQ" customClass="ColoredSwitch" customModule="ToiletMap" customModuleProvider="target">
+                                    <rect key="frame" x="285" y="0.0" width="51" height="31"/>
+                                </switch>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <color key="tintColor" name="MainColor"/>
+            <constraints>
+                <constraint firstItem="dLQ-2t-idI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="5Xh-RL-bJ3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dLQ-2t-idI" secondAttribute="trailing" constant="40" id="TiW-hh-hpj"/>
+                <constraint firstItem="dLQ-2t-idI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="48" id="fpL-MW-Mj7"/>
+            </constraints>
+            <point key="canvasLocation" x="122" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
